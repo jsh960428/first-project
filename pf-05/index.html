@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 세계의 미술작품 </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+    <script src="script/jquery-1.11.3.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="menu">
+                <ul id="MenuBar1" class="MenuBarHorizontal">
+                    <li><a class="MenuBarItemSubmenu" href="#">소장처벌</a>
+                        <ul>
+                            <li><a href="#">한국</a></li>
+                            <li><a href="#">프랑스</a></li>
+                            <li><a href="#">이탈리아</a></li>
+                            <li><a href="#">독일</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="MenuBarItemSubmenu" href="#">장르별</a>
+                        <ul>
+                            <li><a href="#">회화</a></li>
+                            <li><a href="#">판화</a></li>
+                            <li><a href="#">공예/고대유물</a></li>
+                            <li><a href="#">그외</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="MenuBarItemSubmenu" href="#">테마별</a>
+                        <ul>
+                            <li><a href="#">초상화/인물</a></li>
+                            <li><a href="#">종교</a></li>
+                            <li><a href="#">신화/문학</a></li>
+                            <li><a href="#">일상/스포츠</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="MenuBarItemSubmenu" href="#">시대별</a>
+                        <ul>
+                            <li><a href="#">1900년이전</a></li>
+                            <li><a href="#">1900년대</a></li>
+                            <li><a href="#">현대</a></li>
+                            <li><a href="#">그외</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </header>
+        <div id="center">
+
+            <div class="slider">
+                <div class="sliderList">
+                    <div class="sliderImg"><a href="#"><img src="images/slider01.png" alt="slider01"></a></div>
+                    <div class="sliderImg"><a href="#"><img src="images/slider02.png" alt="slider02"></a></div>
+                    <div class="sliderImg"><a href="#"><img src="images/slider03.png" alt="slider03"></a></div>
+                </div>
+            </div>
+
+            <div class="con">
+                <div class="con1">
+                    <ul><a class="cc" href="#">공지사항</a>
+                        <li><a href="#">공지사항 내용1</a><span>21.04.12</span></li>
+                        <li><a href="#">공지사항 내용2</a><span>21.04.12</span></li>
+                        <li><a href="#">공지사항 내용3</a><span>21.04.12</span></li>
+                        <li><a href="#">공지사항 내용4</a><span>21.04.12</span></li>
+                    </ul>
+                </div>
+                <div class="con2">
+                    <ul>
+                        <a class="cc">갤러리</a>
+                        <li><a href="#"><img src="images/gl1.png" alt="gl1"></a></li>
+                        <li><a href="#"><img src="images/gl2.jpg" alt="gl1"></a></li>
+                        <li><a href="#"><img src="images/gl3.jpg" alt="gl1"></a></li>
+                    </ul>
+                </div>
+                <div class="con3">
+                    <a href="#"><img src="images/banner.png" alt="banner"></a>
+                </div>
+            </div>  
+
+            <footer>
+                <div class="blogo">
+                    <a href="#"><img src="images/blogo.png" alt="logo"></a>
+                </div>
+                <div class="copy">
+                    <p>
+                        Art : 미술 <br />
+                        Copyright &copy; 1995-2021
+                        <a href="http://www.naver.com">Art</a>. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="sns">
+                    <!-- ul>li>a>img -->
+                    <ul>
+                        <li><a href="#"><img src="images/sns/f.png" alt="페이스북"></a></li>
+                        <li><a href="#"><img src="images/sns/y.png" alt="유튜브"></a></li>
+                        <li><a href="#"><img src="images/sns/t.png" alt="트위터"></a></li>
+                        <li><a href="#"><img src="images/sns/b.png" alt="밴드"></a></li>
+                        <li><a href="#"><img src="images/sns/i.png" alt="인스타그램"></a></li>
+                    </ul>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {
+        });
+    </script>
+</body>
+
+</html>
