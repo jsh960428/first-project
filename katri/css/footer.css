@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* footer */
+footer {width: 100%; height: 515px; clear: both; position: relative; overflow: hidden;}
+footer .footerline {width: 980px; height: 515px;}
+
+/* footer-메뉴 */
+footer .footerline .tf {width: 100%; height: 365px;}
+footer .footerline .tf .tfbg {width: 100%; height: 365px; position: absolute; top: 0; left: 0; background: #5d6a7b; z-index: -99;}
+.footerline .tf>ul {display: flex; justify-content: space-between;  padding-top: 30px;}
+.footerline .tf>ul>li {width: 14.28%; float: left; line-height: 23px;}
+.footerline .tf>ul>li>ul>li a:hover {font-weight: bold; color:#555;}
+.footerline ul a {color: #fff; font-size: 16px;}
+
+.footerline .tf>ul>li {height: 280px; border-right: 1px solid #ddd; box-sizing: border-box; margin-right: 10px;}
+.footerline .tf>ul>li:nth-child(7) {border-right: 0px; box-sizing: border-box;}
+.footerline ul.bsub a {color: #fff; font-size: 12px;}
+.footerline ul.bsub {margin-top: 10px;}
+
+/* footer-copyright */
+footer .footerline .bf {width: 100%; height: 100px; clear: both;}
+footer .footerline .bf .bfbg {width: 100%; height: 150px; position: absolute; top: 365px; left: 0; background: #394B61; z-index: -1;}
+.footerline .bf ul {margin-top: 30px;}
+.footerline .bf ul li {float: left; margin-right: 10px;}
+.footerline .bf ul li a {font-size: 12px;}
+.footerline .bf p {font-size: 12px; color: #fff;  margin-top: 30px;}
+.footerline .bf select {float: right; margin-top: -80px; margin-right: 55px; height: 28px;}
+.footerline .bf a.bfbt {float: right; margin-top: -80px; width: 51px; height: 28px; background: url(../images/next.jpg)no-repeat center;}

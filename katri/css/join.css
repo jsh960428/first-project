@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+
+#wrap {
+    width: 100%;
+    min-width: 980px;
+    height: auto;
+}
+
+.htmenuline,
+.hbmenuline,
+.slideline,
+.conline,
+.footerline {
+    width: 980px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    /* border: 1px solid green; */
+}
+
+/* contents */
+#contents {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    top: 0;
+    left: 0;
+    clear: both;
+}
+
+#contents .conline {height: 540px;}
+/* con1 */
+#contetns .conline .con1 {width: 100%; height: 40px;}
+.conline .con1 .con1bg {width: 100%; height: 40px; z-index: -1; position: absolute; top: 0; left: 0; box-sizing: border-box; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+.conline .con1 ul.c1l>li {float: left; line-height: 40px; margin-right: 10px;}
+.conline .con1 .btn {float: right;}
+.conline .con1 .btn a {float: left;}
+
+/* con2 */
+#contents .conline .con2 {width: 100%; clear: both;}
+.conline .con2 .conmenu {width: 25%; height: 500px; float: left; margin-top: 20px;}
+.con2 .conmenu p.main { background: #2a67a1; width: 70%; float: left; height: 50px; line-height: 50px; padding: 5%; color: #fff; font-weight: bold; font-size: 25px;}
+
+.con2 .conmenu ul {width: 80%;}
+.con2 .conmenu ul li {width: 100%; line-height: 50px;}
+.con2 .conmenu ul li a {background: #f0f1f6; font-size: 15px; display: block; padding-left: 10px; border-bottom: 1px solid #ddd;} 
+.con2 .conmenu ul li:nth-child(2) a {background: #fff; font-weight: bold;} 
+
+/* 회원가입 */
+.con2 .conbox {width: 75%; height: 700px; float: left; }
+#contents .con2 .conbox p.cbtit {border-bottom: 2px solid #555; margin-bottom: 30px;}
+#contents .con2 .conbox p.cbtit>a {display: block; font-size: 25px; margin-right: 80%; margin-top: 10px; margin-bottom: 10px;}
+#contents .con2 .conbox a.cbimg {display: block; margin-bottom: 30px;}
+#contents .con2 .conbox a.cbimg img {display: block; width: 100%;}
+
+
+.con2 .conbox table {width: 100%; height: auto; border-top: 2px solid #2a67a1; border-bottom: 2px solid #ddd; border-collapse:collapse;}
+.con2 .conbox table tr {width: 100%; height: 35px; }
+.con2 .conbox table tr td.tit {background: #f2f2f2; height: 35px; width: 30%;}
+.con2 .conbox table tr td {height: 40px; width: 100%;}
+.con2 .conbox table tr td:nth-child(1) a { margin-left: 30px;}
+.con2 .conbox table tr td input { margin-left: 10px; width: 35%; height: 28px;}
+.con2 .conbox table tr td select {margin-left: 10px; height: 28px;}
+.con2 .conbox table tr td.number input { width: 10%;}
+.con2 .conbox table tr:nth-child(5) td:nth-child(2) span {line-height: 35px; font-size: 11px; color: #2a67a1;}
+.con2 .conbox table tr:nth-child(10) td:nth-child(2) input {width: 30%;}
+.con2 .conbox table tr:nth-child(10) td:nth-child(2) input.search {background: #555;}
+.con2 .conbox table tr:nth-child(11) td:nth-child(1) input {width: 80%; height: 28px;}
+.con2 .conbox table tr:nth-child(11) td:nth-child(1) a {margin-left: 0;}
+
+.con2 .conbox .btn ul {float: right;}
+.con2 .conbox .btn ul li {float: left; cursor: pointer; margin-left: 30px; margin-top: 10px; width: 90px; height: 40px;}
+.con2 .conbox .btn ul li:nth-child(1) {background: url('../images/btn_confirm2.gif') no-repeat 0 50%;}
+.con2 .conbox .btn ul li:nth-child(2) {background: url('../images/btn_cancel.gif')no-repeat 0 50%;}
