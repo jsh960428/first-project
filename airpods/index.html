@@ -1,0 +1,1127 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width" , initial-scale=1.0,
+          minmum-scale=1.0, user-scalable='no' />	
+    <title></title>
+    <!------------------ fontawesome ------------------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!------------------ google font ------------------->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    <link rel="stylesheet" href="./css/StyleSheet1.css">
+    
+    <!------------------ js ------------------->
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#main_background").stop().delay(500).animate({ left: "-1920px" }, 1500);
+            $("#main_img").stop().delay(1000).animate({ opacity: 0 }, 1000, function () {
+                $("#content_main").children("p").stop().delay(100).animate({ opacity: "1" }, 300, function () {
+                    $("#main_text01").stop().animate({ opacity: "1" }, 200);
+                });
+            });
+
+            function move() {
+                $("#main_img03").animate({ top: '250px' }, 1000).animate({ top: '260px' }, 1000, move);
+            }
+            move();
+
+            //header
+            $(".nav_icon02").click(function () {
+                $("nav").animate({ right: "-220px" }, 500);
+                $(".nav_icon01").css({ opacity: "1" });
+            });
+            $(".nav_icon01").click(function () {
+                $(".nav_icon01").css({ opacity: "0" });
+                $("nav").animate({ right: "0%" }, 500);
+                $("nav").css({ opacity: "1" });
+            });
+            var ii = $(window).width();
+            if (ii > 1366) {
+                $("#nav_all ul li").eq(0).click(function () {
+                    $("html, body").stop().animate({ scrollTop: "0" }, 500);
+                });
+                $("#nav_all ul li").eq(1).click(function () {
+                    $("html, body").stop().animate({ scrollTop: "954" }, 500);
+                });
+                $("#nav_all ul li").eq(2).click(function () {
+                    $("html, body").stop().animate({ scrollTop: "2354" }, 500);
+                });
+                $("#nav_all ul li").eq(3).click(function () {
+                    $("html, body").stop().animate({ scrollTop: "5411" }, 500);
+                });
+                $("#nav_all ul li").eq(4).click(function () {
+                    $("html, body").stop().animate({ scrollTop: "7011" }, 500);
+                });
+                $("#nav_all ul li").eq(5).click(function () {
+                    $("html, body").stop().animate({ scrollTop: "7960" }, 500);
+                });
+            }
+            if (ii >= 768 && ii <= 1365) {
+                $("#nav_all ul li").eq(0).click(function () {
+                    $("html, body").stop().animate({ scrollTop: "0" }, 500);
+                });
+                $("#nav_all ul li").eq(1).click(function () {
+                    $("html, body").stop().animate({ scrollTop: "960" }, 500);
+                });
+                $("#nav_all ul li").eq(2).click(function () {
+                    $("html, body").stop().animate({ scrollTop: "2560" }, 500);
+                });
+                $("#nav_all ul li").eq(3).click(function () {
+                    $("html, body").stop().animate({ scrollTop: "5660" }, 500);
+                });
+                $("#nav_all ul li").eq(4).click(function () {
+                    $("html, body").stop().animate({ scrollTop: "7360" }, 500);
+                });
+                $("#nav_all ul li").eq(5).click(function () {
+                    $("html, body").stop().animate({ scrollTop: "8303" }, 500);
+                });
+            }
+            //window
+            $(window).scroll(function () {
+                var ww = $(window).width();
+                var scroll = $(window).scrollTop();
+                //웹
+
+                            if (ww > 1366) {
+                                $("#scrolltop01").text(scroll);
+                                //design01
+                                if (scroll >= 300 && scroll <= 900) {
+                                    $(".title01").animate({ opacity: "1" }, 100);
+                                }
+                                //design02
+                                //design03
+                                if (scroll >= 400 && scroll <= 2000) {
+
+                                    $(".design_img01").stop().animate({ opacity: "1" }, 200);
+                                    $("#design_img01").stop().animate({ marginRight: "-580px" }, 100, function () {
+                                        $(".design_img02").stop().animate({ opacity: "1" }, 100, function () {
+                                            $(".design_img03").stop().animate({ opacity: "1" }, 100, function () {
+                                                $(".design_img04").stop().animate({ opacity: "1" }, 200, function () {
+                                                    $(".design_img05").stop().animate({ opacity: "1" }, 100, function () {
+                                                        $(".design_img06").stop().animate({ opacity: "1" }, 100, function () {
+                                                            $(".design_img07").stop().animate({ opacity: "1" }, 200, function () {
+                                                                $(".design_img08").stop().animate({ opacity: "1" }, 100, function () {
+                                                                    $("#design_txt").stop().animate({ opacity: "1", marginLeft: "-460px" }, 300);
+                                                                });
+                                                            });
+                                                        });
+                                                    });
+                                                });
+                                            });
+                                        });
+                                    });
+                                }
+                                //design04
+                                if (scroll >= 810 && scroll <= 2300) {
+                                    $("#design_img02 img").eq(0).animate({ opacity: "0" }, 200, function () {
+                                        $("#design_img02 img").eq(1).animate({ opacity: "1" }, 400, function () {
+                                            $("#design_detail>div img:nth-child(1)").animate({ opacity: "1" }, 200, function () {
+                                                $("#design_detail>div img:nth-child(2)").animate({ opacity: "1" }, 300, function () {
+                                                    $("#design_detail>div img:nth-child(3)").animate({ opacity: "1" }, 200, function () {
+                                                        $("#design_detail>div img:nth-child(4)").animate({ opacity: "1" }, 300, function () {
+                                                            $("#design_detail>div img:nth-child(5)").animate({ opacity: "1" }, 200)
+                                                        });
+                                                    });
+                                                });
+                                            });
+                                        });
+                                    });
+                                }
+                                //design05
+                                if (scroll >= 1700) {
+                                    $(".title02").animate({ opacity: "1" }, 500);
+                                }
+
+                                //design06
+                                if (scroll >= 1800) {
+                                    $("#continuous_onetab").animate({ marginLeft: "-460px" }, 500, function () {
+                                        $("#continious_animation").animate({ opacity: "1" }, 600, function () {
+                                            $("#continuous_txt").animate({ opacity: "1" }, 300, function () {
+                                                $("#continuous_txt span").animate({ width: "400px" }, 200, function () {
+                                                    $("#continuous_img").animate({ marginRight: "100px" }, 400, function () {
+                                                        $("#continuous_img img:nth-child(2)").animate({ opacity: "1" }, 200, function () {
+                                                            $("#continuous_img img:nth-child(3)").animate({ opacity: "1" }, 200);
+                                                        });
+                                                    });
+                                                });
+                                            });
+                                        })
+                                    });
+                                }
+                                //design07
+                                if (scroll >= 2600) {
+                                    $("#continuous02_img img:nth-child(1)").animate({ top: "0px" }, 400);
+                                    $("#continuous02_img img:nth-child(2)").animate({ top: "100px" }, 400);
+                                    $("#continuous02_txt p:nth-child(1)").animate({ bottom: "100px" }, 500, function () {
+                                        $("#continuous02_txt p:nth-child(3)").animate({ opacity: "1", marginTop: "42px" }, 500);
+                                    });
+                                }
+                                //design08
+                                if (scroll >= 3200) {
+                                    $("#content_continuous03").animate({ borderRadius: "200px" }, 500);
+                                }
+                                //design09
+                                if (scroll >= 3200 && scroll <= 3700) {
+                                    $("#continuous02_img").css({ position: "fixed", top: "0px", zIndex: "100" });
+                                } else {
+                                    $("#continuous02_img").css({ position: "absolute", top: "80px" });
+                                }
+                                //design10
+                                if (scroll >= 3400) {
+                                    $(".title03").animate({ opacity: "1" }, 500);
+                                    $("#siri_img").animate({ opacity: "1" }, 500);
+
+                                }
+                                //design11
+                                if (scroll > 3500) {
+                                    $("#siri_animation").animate({ opacity: "1" }, 200, function () {
+                                        $(".siri01 p:nth-child(1)").animate({ opacity: "1" }, 200, function () {
+                                            $(".siri01 p:nth-child(3)").animate({ opacity: "1" }, 100, function () {
+                                                $(".siri01 p:nth-child(2)").delay(100).animate({ width: "1000px" }, 100);
+                                            });
+                                        });
+                                    });
+                                }
+                                //design12
+                                if (scroll >= 3993) {
+                                    $(".siri_txt01 img").animate({ marginLeft: "0px" }, 500, function () {
+                                        $(".siri_txt02 img").animate({ marginLeft: "0px" }, 300, function () {
+                                            $(".siri_txt03 img").animate({ marginLeft: "0px" }, 400, function () {
+                                                $(".siri_txt04 img").animate({ marginLeft: "0px" }, 400);
+                                            });
+                                        })
+                                    });
+                                    $(".siri_txt01 p").animate({ marginRight: "0px" }, 500, function () {
+                                        $(".siri_txt02 p").animate({ marginRight: "0px" }, 300, function () {
+                                            $(".siri_txt03 p").animate({ marginRight: "0px" }, 400, function () {
+                                                $(".siri_txt04 p").animate({ marginRight: "0px" }, 400);
+                                            });
+                                        })
+                                    });
+                                }
+                                //design13
+                                if (scroll >= 4293) {
+                                    $(".battery02 p:nth-child(2)").animate({ width: "1400px" }, 400, function () {
+                                        $(".battery02 p:nth-child(1)").animate({ opacity: "1" }, 400, function () {
+                                            $(".battery02 p:nth-child(3)").animate({ opacity: "1" }, 400, function () {
+                                            });
+                                        });
+                                    });
+                                }
+                                //design14
+                                if (scroll >= 4893) {
+                                    $(".title04 p:nth-child(1)").animate({ paddingRight: "10px", opacity: "1" }, 700);
+                                    $(".title04 p:nth-child(2)").animate({ paddingLeft: "0px", opacity: "1" }, 700);
+                                }
+                                //design15
+                                if (scroll >= 5000) {
+                                    $("#technology_img img:nth-child(2)").animate({ opacity: "1" }, 200, function () {
+                                        $("#technology_txt p:nth-child(2)").animate({ width: "600px" }, 100, function () {
+                                            $("#technology_txt p:nth-child(1)").animate({ paddingLeft: "520px", opacity: "1" }, 300, function () {
+                                                $("#technology_txt p:nth-child(3)").animate({ opacity: "1" }, 300, function () {
+                                                    $("#technology_img img:nth-child(2)").animate({ opacity: "0" }, 100);
+                                                    $("#technology_img img:nth-child(1)").animate({ opacity: "1" }, 200);
+                                                });
+                                            });
+                                        });
+                                    });
+                                }
+                                //design16
+                                if (scroll >= 5406) {
+                                    $(".title05 p:nth-child(1)").animate({ paddingTop: "60px", opacity: "1" }, 500);
+                                    $(".title05 p:nth-child(2)").animate({ paddingTop: "15px", opacity: "1" }, 500);
+                                }
+                                //design17
+                                if (scroll >= 5700) {
+                                    $(".micro_img01 img:nth-child(2)").animate({ opacity: "0" }, 500, function () {
+                                        $(".micro_img01 img:nth-child(3)").animate({ opacity: "1" }, 300, function () {
+                                        });
+                                    });
+                                    $(".micro_img02 img:nth-child(3)").animate({ opacity: "0" }, 500, function () {
+                                        $(".micro_img02 img:nth-child(4)").animate({ opacity: "1" }, 300, function () {
+                                        });
+                                    });
+                                    $(".micro_txt01 p:nth-child(2)").delay(300).animate({ width: "400px", opacity: "1" }, 500);
+                                    $(".micro_txt01 p:nth-child(1)").delay(300).animate({ opacity: "1" }, 500);
+                                    $(".micro_txt01 p:nth-child(3)").delay(300).animate({ opacity: "1" }, 500, function () {
+                                        $("#micro_circle>div").animate({ opacity: "1" }, 200, function () {
+
+                                            $(".micro_txt02 div:nth-child(1) span").animate({ width: "200px" }, 300, function () {
+                                                $(".micro_txt02 div:nth-child(1) p").animate({ opacity: "1", paddingLeft: "160px" }, 200);
+                                            });
+                                            $(".micro_txt02 div:nth-child(2) span").delay(800).animate({ width: "200px" }, 300, function () {
+                                                $(".micro_txt02 div:nth-child(2) p").animate({ opacity: "1", paddingLeft: "100px" }, 200);
+                                            });
+                                            $(".micro_txt02 div:nth-child(3) span").delay(1600).animate({ width: "200px" }, 300, function () {
+                                                $(".micro_txt02 div:nth-child(3) p").animate({ opacity: "1", paddingLeft: "110px" }, 200);
+                                            });
+                                            $(".micro_txt02 div:nth-child(4) span").delay(2200).animate({ width: "200px" }, 300, function () {
+                                                $(".micro_txt02 div:nth-child(4) p").animate({ opacity: "1", paddingLeft: "160px" }, 200);
+                                            });
+                                            $(".micro_txt02 div:nth-child(5) span").delay(3000).animate({ width: "200px" }, 300, function () {
+                                                $(".micro_txt02 div:nth-child(5) p").animate({ opacity: "1", paddingLeft: "160px" }, 200);
+                                            });
+                                        });
+                                    });
+                                }
+
+                                //design18
+                                if (scroll >= 6360) {
+                                    $(".title06").animate({ opacity: "1" }, 800);
+                                }
+                                //design19
+                                if (scroll >= 6860) {
+                                    $("#sound_audio img").animate({ opacity: "1" }, 1000);
+                                    $("#sound_audio p:nth-child(2)").animate({ bottom: "360px" }, 800);
+                                }
+                                //design20
+                                if (scroll > 6962) {
+                                    $("#sound_audio p:nth-child(3)").animate({ opacity: "1" }, 800);
+                                }
+                                //design21
+                                if (scroll > 7400) {
+                                    $("#sound_music div img").animate({ opacity: "1" }, 800, function () {
+                                        $("#sound_music div p").animate({ opacity: "1" }, 300);
+                                    });
+                                }
+                }
+                //태블릿
+                            if (ww >=768 && ww<=1365 ) {
+                                $("#scrolltop01").text(scroll);
+                                //design01
+                                if (scroll >= 300 && scroll <= 900) {
+                                    $(".title01").animate({ opacity: "1" }, 100);
+                                }
+                                //design02
+                                //design03
+                                if (scroll >= 500 && scroll <= 2000) {
+
+                                    $(".design_img01").stop().animate({ opacity: "1" }, 300);
+                                    $("#design_img01").stop().animate({ marginRight: "-280px" }, 200, function () {
+                                        $(".design_img02").stop().animate({ opacity: "1" }, 100, function () {
+                                            $(".design_img03").stop().animate({ opacity: "1" }, 200, function () {
+                                                $(".design_img04").stop().animate({ opacity: "1" }, 100, function () {
+                                                    $(".design_img05").stop().animate({ opacity: "1" }, 200, function () {
+                                                        $(".design_img06").stop().animate({ opacity: "1" }, 200, function () {
+                                                            $(".design_img07").stop().animate({ opacity: "1" }, 200, function () {
+                                                                $(".design_img08").stop().animate({ opacity: "1" }, 100);
+                                                            });
+                                                        });
+                                                    });
+                                                });
+                                            });
+                                        });
+                                    });
+                                }
+                                //design03
+                                if (scroll >= 700 && scroll <= 2000) {
+                                    $("#design_txt").stop().animate({ opacity: "1", marginLeft: "-200px" }, 500);
+                                }
+                                //design04
+                                if (scroll >= 1400 && scroll <= 2300) {
+                                    $("#design_img02 img").eq(0).animate({ opacity: "0" }, 200, function () {
+                                        $("#design_img02 img").eq(1).animate({ opacity: "1" }, 400, function () {
+                                            $("#design_detail>div img:nth-child(1)").animate({ opacity: "1" }, 200, function () {
+                                                $("#design_detail>div img:nth-child(2)").animate({ opacity: "1" }, 300, function () {
+                                                    $("#design_detail>div img:nth-child(3)").animate({ opacity: "1" }, 200, function () {
+                                                        $("#design_detail>div img:nth-child(4)").animate({ opacity: "1" }, 300, function () {
+                                                            $("#design_detail>div img:nth-child(5)").animate({ opacity: "1" }, 200)
+                                                        });
+                                                    });
+                                                });
+                                            });
+                                        });
+                                    });
+                                }
+                                //design05
+                                if (scroll >= 1600) {
+                                    $(".title02").animate({ opacity: "1" }, 500);
+                                }
+
+                                //design06
+                                if (scroll >= 2100) {
+                                    $("#continuous_onetab").animate({ marginLeft: "-340px" }, 300, function () {
+                                        $("#continious_animation").animate({ opacity: "1" }, 300, function () {
+                                            $("#continuous_txt").animate({ opacity: "1" }, 200, function () {
+                                                $("#continuous_txt span").animate({ width: "400px" }, 200, function () {
+                                                    $("#continuous_img").animate({ marginRight: "100px" }, 200, function () {
+                                                        $("#continuous_img img:nth-child(2)").animate({ opacity: "1" }, 300, function () {
+                                                            $("#continuous_img img:nth-child(3)").animate({ opacity: "1" }, 200);
+                                                        });
+                                                    });
+                                                });
+                                            });
+                                        })
+                                    });
+                                }
+                                //design07
+                                if (scroll >= 2600) {
+                                    $("#continuous02_img img:nth-child(1)").animate({ top: "0px" }, 800);
+                                    $("#continuous02_img img:nth-child(2)").animate({ top: "100px" }, 800);
+                                    $("#continuous02_txt p:nth-child(1)").animate({ bottom: "100px" }, 800, function () {
+                                        $("#continuous02_txt p:nth-child(3)").animate({ opacity: "1", marginTop: "42px" }, 500);
+                                    });
+                                }
+                                //design09
+                                if (scroll >= 3400 && scroll <= 3900) {
+                                    $("#continuous02_img").css({ position: "fixed", top: "0px", zIndex: "100" });
+                                } else {
+                                    $("#continuous02_img").css({ position: "absolute", top: "80px" });
+                                }
+                                //design10
+                                if (scroll >= 3600) {
+                                    $(".title03").animate({ opacity: "1" }, 500);
+                                    $("#siri_img").animate({ opacity: "1" }, 500);
+
+                                }
+                                //design11
+                                if (scroll > 3700) {
+                                    $("#siri_animation").animate({ opacity: "1" }, 300, function () {
+                                        $(".siri01 p:nth-child(1)").animate({ opacity: "1" }, 200, function () {
+                                            $(".siri01 p:nth-child(3)").animate({ opacity: "1" }, 300, function () {
+                                                $(".siri01 p:nth-child(2)").delay(100).animate({ width: "1000px" }, 300);
+                                            });
+                                        });
+                                    });
+                                }
+                                //design12
+                                if (scroll >= 4000) {
+                                    $(".siri_txt01 img").animate({ marginLeft: "0px" }, 500, function () {
+                                        $(".siri_txt02 img").animate({ marginLeft: "0px" }, 300, function () {
+                                            $(".siri_txt03 img").animate({ marginLeft: "0px" }, 400, function () {
+                                                $(".siri_txt04 img").animate({ marginLeft: "0px" }, 400);
+                                            });
+                                        })
+                                    });
+                                    $(".siri_txt01 p").animate({ marginRight: "0px" }, 500, function () {
+                                        $(".siri_txt02 p").animate({ marginRight: "0px" }, 300, function () {
+                                            $(".siri_txt03 p").animate({ marginRight: "0px" }, 400, function () {
+                                                $(".siri_txt04 p").animate({ marginRight: "0px" }, 400);
+                                            });
+                                        })
+                                    });
+                                }
+                                //design13
+                                if (scroll >= 4600) {
+                                    $(".battery02 p:nth-child(2)").animate({ width: "1400px" }, 400, function () {
+                                        $(".battery02 p:nth-child(1)").animate({ opacity: "1" }, 400, function () {
+                                            $(".battery02 p:nth-child(3)").animate({ opacity: "1" }, 400, function () {
+                                            });
+                                        });
+                                    });
+                                }
+                                //design14
+                                if (scroll >= 5000) {
+                                    $(".title04 p:nth-child(1)").animate({ paddingRight: "10px", opacity: "1" }, 700);
+                                    $(".title04 p:nth-child(2)").animate({ paddingLeft: "0px", opacity: "1" }, 700);
+                                }
+                                //design15
+                                if (scroll >= 5100) {
+                                    $("#technology_img img:nth-child(2)").animate({ opacity: "1" }, 200, function () {
+                                        $("#technology_txt p:nth-child(2)").animate({ width: "600px" }, 300, function () {
+                                            $("#technology_txt p:nth-child(1)").animate({ paddingLeft: "520px", opacity: "1" }, 400, function () {
+                                                $("#technology_txt p:nth-child(3)").animate({ opacity: "1" }, 300, function () {
+                                                    $("#technology_img img:nth-child(2)").animate({ opacity: "0" }, 100);
+                                                    $("#technology_img img:nth-child(1)").animate({ opacity: "1" }, 300);
+                                                });
+                                            });
+                                        });
+                                    });
+                                }
+                                //design16
+                                if (scroll >= 5700) {
+                                    $(".title05 p:nth-child(1)").animate({ paddingTop: "60px", opacity: "1" }, 500);
+                                    $(".title05 p:nth-child(2)").animate({ paddingTop: "15px", opacity: "1" }, 500);
+                                }
+                                //design17
+                                if (scroll >= 6099) {
+                                    $(".micro_img01 img:nth-child(2)").animate({ opacity: "0" }, 300, function () {
+                                        $(".micro_img01 img:nth-child(3)").animate({ opacity: "1" }, 200, function () {
+                                        });
+                                    });
+
+                                    $(".micro_txt01 p:nth-child(2)").delay(300).animate({ width: "400px", opacity: "1" }, 300);
+                                    $(".micro_txt01 p:nth-child(1)").delay(300).animate({ opacity: "1" }, 300);
+                                    $(".micro_txt01 p:nth-child(3)").delay(300).animate({ opacity: "1" }, 300);
+                                }
+                                //design17
+                                if(scroll>=6399){
+                                    $(".micro_img02 img:nth-child(3)").animate({ opacity: "0" }, 300, function () {
+                                        $(".micro_img02 img:nth-child(4)").animate({ opacity: "1" }, 200, function () {
+                                        });
+                                    });
+                                    $("#micro_circle>div").delay(300).animate({ opacity: "1" }, 300, function () {
+
+                                        $(".micro_txt02 div:nth-child(1) span").animate({ width: "200px" }, 300, function () {
+                                            $(".micro_txt02 div:nth-child(1) p").animate({ opacity: "1", paddingLeft: "160px" }, 200);
+                                        });
+                                        $(".micro_txt02 div:nth-child(2) span").delay(800).animate({ width: "200px" }, 300, function () {
+                                            $(".micro_txt02 div:nth-child(2) p").animate({ opacity: "1", paddingLeft: "100px" }, 200);
+                                        });
+                                        $(".micro_txt02 div:nth-child(3) span").delay(1600).animate({ width: "200px" }, 300, function () {
+                                            $(".micro_txt02 div:nth-child(3) p").animate({ opacity: "1", paddingLeft: "110px" }, 200);
+                                        });
+                                        $(".micro_txt02 div:nth-child(4) span").delay(2200).animate({ width: "200px" }, 300, function () {
+                                            $(".micro_txt02 div:nth-child(4) p").animate({ opacity: "1", paddingLeft: "160px" }, 200);
+                                        });
+                                        $(".micro_txt02 div:nth-child(5) span").delay(3000).animate({ width: "200px" }, 300, function () {
+                                            $(".micro_txt02 div:nth-child(5) p").animate({ opacity: "1", paddingLeft: "160px" }, 200);
+                                        });
+                                    });
+                                }
+                                //design18
+                                if (scroll >= 6799) {
+                                    $(".title06").animate({ opacity: "1" }, 800);
+                                }
+                                //design19
+                                if (scroll >= 7080) {
+                                    $("#sound_audio img").animate({ opacity: "1" }, 1000);
+                                    $("#sound_audio p:nth-child(2)").animate({ bottom: "360px" }, 800);
+                                }
+                                //design20
+                                if (scroll > 7280) {
+                                    $("#sound_audio p:nth-child(3)").animate({ opacity: "1" }, 800);
+                                }
+                                //design21
+                                if (scroll > 7780) {
+                                    $("#sound_music div img").animate({ opacity: "1" }, 800, function () {
+                                        $("#sound_music div p").animate({ opacity: "1" }, 300);
+                                    });
+                                }
+
+                            }
+                //모바일
+                            if (ww <= 767) {
+                                $("#scrolltop01").text(scroll);
+                                //design01
+                                if (scroll >= 150 && scroll <= 900) {
+                                    $(".title01").animate({ opacity: "1" }, 100);
+                                }
+                                //design02
+                                //design03
+                                if (scroll >= 300 && scroll <= 2000) {
+
+                                    $(".design_img01").stop().animate({ opacity: "1" }, 500);
+                                    $("#design_img01").stop().animate({ marginRight: "-170px" }, 700, function () {
+                                        $(".design_img02").stop().animate({ opacity: "1" }, 100, function () {
+                                            $(".design_img03").stop().animate({ opacity: "1" }, 200, function () {
+                                                $(".design_img04").stop().animate({ opacity: "1" }, 300, function () {
+                                                    $(".design_img05").stop().animate({ opacity: "1" }, 200, function () {
+                                                        $(".design_img06").stop().animate({ opacity: "1" }, 200, function () {
+                                                            $(".design_img07").stop().animate({ opacity: "1" }, 300, function () {
+                                                                $(".design_img08").stop().animate({ opacity: "1" }, 100);
+                                                            });
+                                                        });
+                                                    });
+                                                });
+                                            });
+                                        });
+                                    });
+                                }
+                                //design03
+                                if (scroll >= 500 && scroll <= 2000) {
+                                    $("#design_txt").stop().animate({ opacity: "1", marginLeft: "-160px" }, 500);
+                                }
+                                //design04
+                                if (scroll >= 1300 && scroll <= 2300) {
+                                    $("#design_img02 img").eq(0).animate({ opacity: "0" }, 200, function () {
+                                        $("#design_img02 img").eq(1).animate({ opacity: "1" }, 400, function () {
+                                            $("#design_detail>div img:nth-child(5)").animate({ opacity: "1" }, 200, function () {
+                                                $("#design_detail>div img:nth-child(2)").animate({ opacity: "1" }, 300, function () {
+                                                    $("#design_detail>div img:nth-child(3)").animate({ opacity: "1" }, 200, function () {
+                                                        $("#design_detail>div img:nth-child(4)").animate({ opacity: "1" }, 300);
+                                                    });
+                                                });
+                                            });
+                                        });
+                                    });
+                                }
+                                //design05
+                                if (scroll >= 1700) {
+                                    $(".title02").animate({ opacity: "1" }, 500);
+                                }
+
+                                //design06
+                                if (scroll >= 1800) {
+                                    $("#continuous_onetab").animate({ marginLeft: "-50px" }, 500, function () {
+                                        $("#continious_animation").animate({ opacity: "1" }, 500);
+                                    });
+                                }
+                                if (scroll >= 2293) {
+                                    $("#continuous_txt div").animate({ height: "110px" }, 500);
+                                    $("#continuous_img").delay(500).animate({ marginRight: "200px" }, 500, function () {
+                                        $("#continuous_img img:nth-child(2)").animate({ opacity: "1" }, 500, function () {
+                                            $("#continuous_img img:nth-child(3)").animate({ opacity: "1" }, 500);
+                                        });
+                                    });
+                                } 
+                                if (scroll>=2300) {
+                                    $("#continuous_txt").animate({ opacity: "1" }, 500);
+                                }
+                                //design07
+                                if (scroll >=3100) {
+                                    $("#continuous02_txt p:nth-child(1)").animate({ bottom: "100px" }, 800, function () {
+                                        $("#continuous02_txt p:nth-child(3)").animate({ opacity: "1", marginTop: "42px" }, 500);
+                                    });
+                                }
+                                //design10
+                                if (scroll >= 3700) {
+                                    $(".title03").animate({ opacity: "1" }, 500);
+                                    $("#siri_img").animate({ opacity: "1" }, 500);
+                                }
+                                //design11
+                                if (scroll > 3900) {
+                                    $("#siri_animation").animate({ opacity: "1" }, 400, function () {
+                                        $(".siri01 p:nth-child(1)").animate({ opacity: "1" }, 400, function () {
+                                            $(".siri01 p:nth-child(3)").animate({ opacity: "1" }, 400, function () {
+                                                $(".siri01 p:nth-child(2)").delay(100).animate({ width: "1000px" }, 400);
+                                            });
+                                        });
+                                    });
+                                }
+                                //design12
+                                if (scroll >= 4400) {
+                                    $(".siri_txt01 img").animate({ marginLeft: "150px" }, 500, function () {
+                                        $(".siri_txt02 img").animate({ marginLeft: "150px" }, 300, function () {
+                                            $(".siri_txt03 img").animate({ marginLeft: "150px" }, 400, function () {
+                                                $(".siri_txt04 img").animate({ marginLeft: "150px" }, 400);
+                                            });
+                                        })
+                                    });
+                                    $(".siri_txt01 p").animate({ marginRight: "0px" }, 500, function () {
+                                        $(".siri_txt02 p").animate({ marginRight: "0px" }, 300, function () {
+                                            $(".siri_txt03 p").animate({ marginRight: "0px" }, 400, function () {
+                                                $(".siri_txt04 p").animate({ marginRight: "0px" }, 400);
+                                            });
+                                        })
+                                    });
+                                }
+                                //design13
+                                if (scroll >= 4800) {
+                                    $(".battery02 p:nth-child(2)").animate({ width: "1400px" }, 400, function () {
+                                        $(".battery02 p:nth-child(1)").animate({ opacity: "1" }, 400, function () {
+                                            $(".battery02 p:nth-child(3)").animate({ opacity: "1" }, 400, function () {
+                                            });
+                                        });
+                                    });
+                                }
+                                //design14
+                                if (scroll >= 5600) {
+                                    $(".title04 p:nth-child(1)").animate({ paddingRight: "10px", opacity: "1" }, 700);
+                                    $(".title04 p:nth-child(2)").animate({ paddingLeft: "0px", opacity: "1" }, 700);
+                                }
+                                //design15
+                                if (scroll >= 5900) {
+                                    $("#technology_img img:nth-child(2)").animate({ opacity: "1" }, 500, function () {
+                                        $("#technology_txt p:nth-child(2)").animate({ width: "500px" }, 300, function () {
+                                            $("#technology_txt p:nth-child(1)").animate({ paddingLeft: "400px", opacity: "1" }, 400, function () {
+                                                $("#technology_txt p:nth-child(3)").animate({ opacity: "1" }, 800, function () {
+                                                    $("#technology_img img:nth-child(2)").animate({ opacity: "0" }, 100);
+                                                    $("#technology_img img:nth-child(1)").animate({ opacity: "1" }, 500);
+                                                });
+                                            });
+                                        });
+                                    });
+                                }
+                                //design16
+                                if (scroll >= 6200) {
+                                    $(".title05 p:nth-child(1)").animate({ paddingTop: "60px", opacity: "1" }, 500);
+                                    $(".title05 p:nth-child(2)").animate({ paddingTop: "15px", opacity: "1" }, 500);
+                                }
+                                //design17
+                                if (scroll >= 6600) {
+                                    $(".micro_img01 img:nth-child(2)").animate({ opacity: "0" }, 700, function () {
+                                        $(".micro_img01 img:nth-child(3)").animate({ opacity: "1" }, 1000, function () {
+                                        });
+                                    });
+
+                                    $(".micro_txt01 p:nth-child(2)").delay(800).animate({ width: "400px", opacity: "1" }, 500);
+                                    $(".micro_txt01 p:nth-child(1)").delay(1200).animate({ opacity: "1" }, 500);
+                                    $(".micro_txt01 p:nth-child(3)").delay(1200).animate({ opacity: "1" }, 500);
+                                }
+                                //design17
+                                if (scroll >= 7100) {
+                                    $(".micro_img02 img:nth-child(3)").animate({ opacity: "0" }, 700, function () {
+                                        $(".micro_img02 img:nth-child(4)").animate({ opacity: "1" }, 1000, function () {
+                                        });
+                                    });
+                                    $("#micro_circle>div").delay(700).animate({ opacity: "1" }, 500, function () {
+
+                                        $(".micro_txt02 div:nth-child(1) span").animate({ width: "200px" }, 300, function () {
+                                            $(".micro_txt02 div:nth-child(1) p").animate({ opacity: "1", paddingLeft: "160px" }, 400);
+                                        });
+                                        $(".micro_txt02 div:nth-child(2) span").delay(800).animate({ width: "200px" }, 300, function () {
+                                            $(".micro_txt02 div:nth-child(2) p").animate({ opacity: "1", paddingLeft: "100px" }, 400);
+                                        });
+                                        $(".micro_txt02 div:nth-child(3) span").delay(1600).animate({ width: "200px" }, 300, function () {
+                                            $(".micro_txt02 div:nth-child(3) p").animate({ opacity: "1", paddingLeft: "110px" }, 400);
+                                        });
+                                        $(".micro_txt02 div:nth-child(4) span").delay(2200).animate({ width: "200px" }, 300, function () {
+                                            $(".micro_txt02 div:nth-child(4) p").animate({ opacity: "1", paddingLeft: "160px" }, 400);
+                                        });
+                                        $(".micro_txt02 div:nth-child(5) span").delay(3000).animate({ width: "200px" }, 300, function () {
+                                            $(".micro_txt02 div:nth-child(5) p").animate({ opacity: "1", paddingLeft: "160px" }, 400);
+                                        });
+                                    });
+                                }
+                                //design18
+                                if (scroll >= 7600) {
+                                    $(".title06").animate({ opacity: "1" }, 800);
+                                }
+                                //design19
+                                if (scroll >= 7700) {
+                                    $("#sound_audio img").animate({ opacity: "1" }, 500);
+                                    $("#sound_audio p:nth-child(2)").animate({ bottom: "470px" }, 500);
+                                }
+                                //design20
+                                if (scroll > 7800) {
+                                    $("#sound_audio p:nth-child(3)").animate({ opacity: "1" }, 600);
+                                }
+                                //design21
+                                if (scroll > 8300) {
+                                    $("#sound_music div img").animate({ opacity: "1" }, 800, function () {
+                                        $("#sound_music div p").animate({ opacity: "1" }, 300);
+                                    });
+                                }
+                            }
+            });//window scrolltop
+        });
+    </script>
+    <style>
+
+
+    </style>
+</head>
+<body>
+
+    <!-- logo -->
+
+    <section>
+
+        <!-- content_main -->
+        <div id="content_main">
+                <div id="main_text">
+                    <h4>Airpods</h4>
+                    <div id="main_text01">
+                        <div><p>Innovation</p></div>
+                        <div><p>Technology</p></div>
+                    </div>
+                </div>
+                <!-- 텍스트 -->
+                <p>무선 이어폰이라는 난제를 풀다</p>
+                <!-- 사라지는이미지 -->
+                <div id="main_img">
+                    <div class="main_img main_img01">
+                        <img src="./image/main01.png" />
+                    </div>
+                </div>
+                <!-- 고정이미지 -->
+                <div class="main_img main_img02">
+                    <img src="./image/main02.png" />
+                </div>
+            <!-- mobile -->
+            <div id="main_img03">
+                <img src="./image/continuous05.png" />
+                <img src="./image/continuous06.png" />
+            </div>
+
+            <div id="main_background">
+                <div></div>
+            </div>
+            <!-- header -->
+            <header>
+                <div id="logo">
+                    <img src="./image/logo.png" />
+                </div>
+                <div id="nav_icon">
+                    <div class="nav_icon nav_icon01">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <nav>
+                    <div id="nav_all">
+                        <div class="nav_icon nav_icon02">
+                            <i class="fas fa-align-center"></i>
+                        </div>
+                        <ul>
+                            <li><a>Airpods</a></li>
+                            <li><a>Design</a></li>
+                            <li><a>Continuous</a></li>
+                            <li><a>Technology</a></li>
+                            <li><a>Sound</a></li>
+                            <li><a>footer</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <!-- content_design -->
+        <div id="content_design">
+                <p class="titlte title01">
+                    <span>Design</span><br />
+                    간결함에서 찾은 혁신
+                </p>
+                <!-- img animation -->
+                <div id="design_img01">
+                    <img class="design_img design_img01" src="./image/design01.png" />
+                    <img class="design_img design_img02" src="./image/design02.png" />
+                    <img class="design_img design_img03" src="./image/design03.png" />
+                    <img class="design_img design_img04" src="./image/design04.png" />
+                    <img class="design_img design_img05" src="./image/design05.png" />
+                    <img class="design_img design_img06" src="./image/design06.png" />
+                    <img class="design_img design_img07" src="./image/design07.png" />
+                    <img class="design_img design_img08" src="./image/design08.png" />
+                </div>
+                <!-- img txt -->
+                <div id="design_txt">
+                    <p>
+                    제품이 완성되기까지는<br />
+                    <strong> 수많은 선들의 교차,컬러의 조합,면의 배치</strong>가있습니다<br />
+                    여러 구성요소가 쌓이는 과정의 연속에서 역설적이게도<br />
+                     <strong> 가장 심플한것이 가장 화려해보입니다</strong></p>
+                </div>
+                <!-- img -->
+                <div id="design_img02">
+                    <img src="./image/design09.png" />
+                    <img src="./image/design10.png" />
+                </div>
+                <!-- detail -->
+                <div id="design_detail">
+                    <p>Detail view</p>
+                    <div>
+                        <img src="./image/detail01.png" />
+                        <img src="./image/detail02.png" />
+                        <img src="./image/detail03.png" />
+                        <img src="./image/detail04.png" />
+                        <img src="./image/detail05.png" />
+                    </div>
+                </div>
+        </div>
+        <!-- continuous 01-->
+        <div id="content_continuous01">
+                <p class="titlte title02">
+                    Continuous<br />
+                </p>
+                <div id="continuous_onetab">
+                    <div><img src="./image/continuous01.png" /></div>
+                </div>
+            <div id="continious_animation">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="continuous_txt">
+                <p>
+                    <strong>1 번</strong>의 탭으로<br />
+                    <span></span>
+                    어느 기기와도<br />
+                    자동으로 연결됩니다
+                </p>
+                <div></div>
+            </div>
+                <div id="continuous_img">
+                    <img src="./image/continuous02.png" />
+                    <img src="./image/continuous03.png" />
+                    <img src="./image/continuous04.png" />
+                </div>
+        </div>
+        <!-- continuous 02-->
+        <div id="content_continuous02">
+                <div>
+                    <div id="continuous02_txt">
+                        <p>
+                            선이없다.
+                            간결하다.
+                            경이롭다.
+                        </p><br />
+                        <p>
+                            귀에 꽂기만 하면 바로 <strong>연결</strong><br />
+                            통화를 시작하면 또렷하게 <strong>전달</strong><br />
+                            꺼내는 순간 모든 기기와 사용할 <strong>준비</strong>
+                        </p>
+                    </div>
+                    <div id="continuous02_img">
+                        <img src="./image/continuous05.png" />
+                        <img src="./image/continuous06.png" />
+                    </div>
+                </div>
+        </div>
+        <!--continuous 03-->
+        <div id="content_continuous03">
+                <!-- 이미지와 애니메이션 -->
+                <div id="continuous_siri">
+                    <!-- title -->
+                    <p class="titlte title03">
+                        <strong>2번</strong>의 탭으로<br /><br />
+                        iPhone을 꺼낼 필요없이<br />
+                        개인비서 <strong>Siri</strong>를 호출
+                    </p>
+                    <!-- img -->
+                    <div id="siri_img">
+                        <img src="./image/continous_img.png" />
+                    </div>
+                    <!-- animation -->
+                    <div id="siri_animation">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <!-- txt -->
+                    <div id="siri_txt">
+                        <!-- txt title -->
+                        <div class="siri siri01">
+                            <p>continuous</p>
+                            <p></p>
+                            <p>siri를 부를 땐,톡톡</p>
+                        </div>
+                        <!-- icon과 txt -->
+                        <div class="siri siri02">
+                            <!-- 01 -->
+                            <div class="siri_txt siri_txt01">
+                                <img src="./image/smartphone.png" />
+                                <p>"소영한테 전화 걸어줘"</p>
+                            </div>
+                            <!-- 02 -->
+                            <div class="siri_txt siri_txt02">
+                                <img src="./image/route.png" />
+                                <p>"이젠아카데미 가는 길 알려줄래?"</p>
+                            </div>
+                            <!-- 03 -->
+                            <div class="siri_txt siri_txt03">
+                                <img src="./image/music-player.png" />
+                                <p>"재생목록에 있는 아이유노래 틀어줘"</p>
+                            </div>
+                            <!-- 04 -->
+                            <div class="siri_txt siri_txt04">
+                                <img src="./image/gear.png" />
+                                <p>"이젠아카데미 가는 길 알려줄래?"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- battery -->
+                <div id="continuous03_battery">
+                    <div class="battery battery01">
+                        <img src="./image/continuous08.png" />
+                    </div>
+                    <!-- mobile -->
+                    <div id="mobile_battery">
+                        <img src="./image/continuous07.png" />
+                    </div>
+                    <div class="battery battery02">
+                        <p>continuous</p>
+                        <p></p>
+                        <p>24시간 지속가능한 <span>배터리</span></p>
+                    </div>
+                    <div class="battery battery03">
+                        <!-- 01 -->
+                        <div>
+                            <p class="first circle">
+                                <span>5</span><br />
+                                1회 충전으로<br />
+                                최대 5시간 가능
+                            </p>
+                        </div>
+                        <!-- 02 -->
+                        <div>
+                            <p class="second circle">
+                                <span>15</span><br />
+                                15분 충전으로<br />
+                                3시간 사용가능
+                            </p>
+                        </div>
+                        <!-- 03 -->
+                        <div>
+                            <p class="third circle">
+                                <span>24</span><br />
+                                충전 케이스 사용시<br />
+                                24시간 이상 사용가능
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- technology -->
+        <div id="content_technology01">
+            <!-- title -->
+                <div class="titlte title04">
+                    <p>Technology</p>
+                    <p>
+                        간결함과 테크놀로지의 유례없는 만남이 탄생시킨<br />
+                        경이로움 그 자체
+                    </p>
+                </div>
+            <!-- img -->
+                <div id="technology_img">
+                    <img src="image/continuous09.png" />
+                    <img src="image/continuous10.png" />
+                </div>
+                <!-- txt -->
+                <div id="technology_txt">
+                    <p>w1 칩</p>
+                    <p></p>
+                    <p>
+                        AirPods는 Apple에서 자체 제작한 <strong>W1칩</strong>으로 구동됩니다<br />
+                        W1 칩은 극도로 효율적인 <strong>무선 기술</strong>을 통해<br />
+                        더 나은 <strong>연결성</strong>과 향상된 사운드를 제공합니다
+                    </p>
+                </div>
+            </div>
+        <!-- technology_micro -->
+        <div id="content_technology02">
+            <div class="title title05">
+                <p>MicroChip</p>
+                <p>작은 공간 속 작은 칩의 큰 역할</p>
+            </div>
+            <!-- left -->
+            <div id="technology02_left">
+                <!-- img -->
+                <div class="micro_img micro_img01">
+                    <img src="./image/continuous13.png" />
+                    <img src="./image/continuous11.png" />
+                </div>
+                <!-- txt -->
+                <div class="micro_txt micro_txt01">
+                    <p class="mm mm01">언제 듣는지 알다</p>
+                    <p class="mm mm02"></p>
+                    <p class="mm mm03">
+                        광학 센서와 동작 감지 가속도계가 W1 칩과 연동해<br />
+                        <strong>자동으로 오디오를 제어하고</strong> 마이크를 작동시킵니다<br />
+                        이어폰 양쪽을 쓸 수도 있고,한 쪽만 쓸 수도 있습니다<br />
+                        이어폰을 귀에 꽂는 즉시 소리를 재생할 수 있도록 합니다
+                    </p>
+                </div>
+            </div>
+            <!-- right -->
+            <div id="technology02_right">
+                <div class="micro_img micro_img02">
+                    <div id="micro_circle">
+                        <div><div><p></p></div></div>
+                        <div><div><p></p></div></div>
+                        <div><div><p></p></div></div>
+                        <div><div><p></p></div></div>
+                        <div><div><p></p></div></div>
+                    </div>
+                    <img src="./image/continuous14.png" />
+                    <img src="./image/continuous12.png" />
+                </div>
+                <!-- txt -->
+                <div class="micro_txt micro_txt02">
+                    <div>
+                        <span></span>
+                        <p>w1 칩</p>
+                    </div>
+                    <div>
+                        <span></span>
+                        <p>이중 광학 센서</p>
+                    </div>
+                    <div>
+                        <span></span>
+                        <p>듀얼 가속도계</p>
+                    </div>
+                    <div>
+                        <span></span>
+                        <p>배터리</p>
+                    </div>
+                    <div>
+                        <span></span>
+                        <p>안테나</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- content_sound -->
+        <div id="content_sound">
+            <p class="title title06">
+                Sound
+            </p>
+            <!-- audio -->
+            <div id="sound_audio">
+                <img src="./image/sound03.png"/>
+                <p>
+                AAC오디오<br />
+                듀얼 빔포밍 마이크</p>
+                <p>
+                    풍부한 <span>고음질 AAC오디오</span>를 제공하기때문에<br />
+                    영화나 음악을 훌륭한 음질로 들을수 있습니다<br />
+                    통화할 때나 Siri에게 말할 때처럼 잘 들려야 하는<br />
+                    상황일 경우 <span>듀얼 빔포밍 마이크</span>가 배경 소음을<br />
+                    걸러주는 기능으로 사용자에 편리성을 제공합니다
+                </p>
+            </div>
+            <!-- music -->
+            <div id="sound_music">
+                <div>
+                    <img src="./image/sound02.png"/>
+                    <p>
+                        <span>애플뮤직</span><br />
+                        4천5백만 곡 이상<br />
+                        첫3개월은 무료
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <!-- icon과 txt -->
+            <div id="footer_content">
+                <!-- 무료배송 -->
+                <div class="footer_content footer_content01">
+                    <p></p><br />
+                    <p>무료배송</p><br />
+                    <p>
+                        Apple store에서 제품을<br />
+                        직접 픽업하거나,주거지<br />
+                        로 편하게 배송 받으세요
+                    </p>
+                </div>
+                <!-- 상담문의 -->
+                <div class="footer_content footer_content02">
+                    <p></p><br />
+                    <p>상담문의</p><br />
+                    <p>
+                        온라인 채팅으로 상담<br />
+                        받거나 080-330-8877로<br />
+                        전화로 상담을 받으세요
+                    </p>
+                </div>
+                <!-- 스토어앱 -->
+                <div class="footer_content footer_content03">
+                    <p></p><br />
+                    <p>스토어앱</p><br />
+                    <p>
+                        Apple 제품의 쇼핑을<br />
+                        Apple 스토어앱을 통해<br />
+                        편리하게 사용하세요
+                    </p>
+                </div>
+                <!-- 맞춤설정 -->
+                <div class="footer_content footer_content04">
+                    <p></p><br />
+                    <p>맞춤설정</p><br />
+                    <p>
+                        온라인 또는 매장에서<br />
+                        iPhone을 활용하는<br />
+                        방법을 알려드립니다
+                    </p>
+                </div>
+        </div>
+        <!-- copyright -->
+        <div id="footer_copyright">
+            <p></p>
+            <p>copyright @ 2018 하은채  gkdmsco12@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
