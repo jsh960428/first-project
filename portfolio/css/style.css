@@ -45,19 +45,19 @@ body {font: normal 15px 'RaleWayL'; color: #444;}
 #wrap section#profile .profile_main .p_left .img { width: 400px; height: 400px; border-radius: 50%; background: #b5cc7c; background: url('../images/photo.jpg')no-repeat; background-size: 100%;}
 #wrap section#profile .profile_main .p_right {width: 750px;}
 #wrap section#profile .profile_main .p_right dl {padding-top: 70px; padding-left: 50px;}
-#wrap section#profile .profile_main .p_right dl dt {font-size: 40px; margin-bottom: 30px; font-weight: bold;}
+#wrap section#profile .profile_main .p_right dl dt {font-size: 40px; margin-bottom: 30px;}
 #wrap section#profile .profile_main .p_right dl dt span {background: linear-gradient(to left, #b5cc7c, #8ca944); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
 *:root #wrap section#profile .profile_main .p_right dl dd span{background: none;}
 #wrap section#profile .profile_main .p_right dl dd {margin-top: 50px; font-size: 18px; line-height: 1.7;}
 #wrap section#profile .profile_main .p_right dl dd span {color: #b5cc7c;}
-#wrap section#profile .profile_main .p_right dl dd span.intro {color: #222;}
+#wrap section#profile .profile_main .p_right dl dd span.intro {color: #999;}
 
 
 /* skill */
 #wrap section#skill {width: 100%; padding: 0 0 60px 0;}
 #wrap section#skill .skill_main {width: 1400px; overflow: hidden; margin: auto; padding: 60px 0;}
 #wrap section#skill .skill_main h2 {font-size: 15px; margin: 0 auto; border-bottom: 1px solid gray; width: 63px; padding-bottom: 20px; font-family: "SpoqaR";}
-#wrap section#skill .skill_main h3 {font-size: 35px; text-align: center; margin-top: 30px; margin-bottom: 30px; letter-spacing: 2px; font-weight: 100; font-weight: bold;}
+#wrap section#skill .skill_main h3 {font-size: 35px; text-align: center; margin-top: 30px; margin-bottom: 30px; letter-spacing: 2px; font-weight: 100;}
 
 
 /* skillbox */
@@ -72,7 +72,7 @@ body {font: normal 15px 'RaleWayL'; color: #444;}
 #wrap section#portfolio .portfolio_main {width: 1400px; margin: 0 auto; padding: 30px 0;}
 .blind {position:absolute; top:0; left:0;overflow:hidden; text-indent:-9999999px;width: 0; height: 0; font-size:0;}
 #wrap section#portfolio h2 {font-size: 17px; margin: 0 auto; border-bottom: 1px solid gray; width: 90px; padding-bottom: 20px; font-family: "SpoqaR"; text-align: center;}
-#wrap section#portfolio h3 {font-size: 35px; text-align: center; margin-top: 30px; margin-bottom: 30px; letter-spacing: 2px; font-weight: 100; font-weight: bold;}
+#wrap section#portfolio h3 {font-size: 35px; text-align: center; margin-top: 30px; margin-bottom: 30px; letter-spacing: 2px; font-weight: 100;}
 
 
 /* portfoliobox */
@@ -117,7 +117,7 @@ body {font: normal 15px 'RaleWayL'; color: #444;}
 
 section#etc {width: 100%; overflow: hidden; background: #f9f9f9; padding: 100px 0; min-width: 1400px;}
 section#etc h2 {font-size: 17px; margin: 0 auto; border-bottom: 1px solid gray; width: 90px; padding-bottom: 20px; font-family: "SpoqaR"; text-align: center;}
-section#etc h3 {font-size: 35px; text-align: center; margin-top: 30px; margin-bottom: 30px; letter-spacing: 2px; font-weight: 100; font-weight: bold;}
+section#etc h3 {font-size: 35px; text-align: center; margin-top: 30px; margin-bottom: 30px; letter-spacing: 2px; font-weight: 100;}
 
 section#etc .etc_main {width: 1400px; height: 400px; margin: 0 auto; overflow: hidden;}
 section#etc .etc_main dl {width: 19.2%; margin-right: 1%; position: relative; cursor : pointer;}
