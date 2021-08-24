@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>stinger_info_pop</title>
+
+    <!-- script link -->
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.mousewheel.min.js"></script>
+    <link rel="stylesheet" href="./js/jquery-ui/jquery-ui.css">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700" rel="stylesheet">
+
+    <script>
+        $(document).ready(function () {
+
+            $(".tap_btn01").click(function () {
+                $(".tap_box01").show();
+                $(".tap_box02").hide();
+            });
+            $(".tap_btn02").click(function () {
+                $(".tap_box02").show();
+                $(".tap_box01").hide();
+            });
+            $(".tap_btn").click(function () {
+                $(".tap_btn p").removeClass("on");
+                $(this).find("p").addClass("on");
+            });
+            $("#speed").selectmenu();
+            $("#city").selectmenu();
+        });
+    </script>
+
+    <style>
+        /* reset css */
+        * { margin:0; padding:0; }
+        a { text-decoration:none; color:#000; }
+        li { list-style:none; }
+        img { border:none; }
+        body { font-family:'Noto Sans KR', sans-serif; }
+
+        /* header */
+        #header { width:100%; height:500px; min-width:1600px;
+                  overflow:hidden; position:relative; }
+        #header> img { width:100%; 
+                       position:absolute; top:-400px; left:0; 
+                       opacity:0.8; }
+            /* logo */
+            #logo { width:300px; height:30%; 
+                    position:absolute; top:30px; left:50%;
+                    margin-left:-150px; z-index:10; }
+            #logo img { width:100%; }
+            /* back btn */
+            #back_btn { width:70px; height:40px;
+                        position:fixed; top:25px; left:50px; 
+                        z-index:10;  }
+            #back_btn img { width:100%; opacity:0.7; }
+            /* title */
+            #header p { position:absolute; bottom:40px; left:16%; 
+                        width:1300px; color:#fff; font-weight:300; font-size:0.8em; }
+            #header em { font-weight:700; font-size:3.5em;  }
+            #header span { font-size:1.5em; font-weight:700;
+                           display:block;  }
+
+        /* 시승절차 안내 */
+        #drive_info { width:1300px; margin:0 auto; }
+            #step { margin-top:50px; color:#182842; } 
+                .title { font-weight:bold; font-size:2.5em; color:#182842; } 
+                .sub_info { font-size:0.85em; margin-top:5px; display:block;  color:#777; }
+            
+             #index { width:1050px; height:200px; 
+                      margin:70px auto; } 
+             #index li { width:150px; height:150px; float:left; text-align:center; }
+                .index { text-align:center; position:relative;
+                         background-color:#182842;
+                         border-radius:150px; }
+                .index img { width:70px; margin-top:25px; }
+                .index02 img, .index04 img { margin-top:40px; }
+                .index03 img { margin-left:10px; }
+                .index p { color:#fff; font-size:0.9em; }
+                .index span { color:#182842; font-weight:bold; }
+                .index01 p { margin-top:8px; }
+                .index02 p, .index04 p { margin-top:12px; }
+                .index_arrow { width:50px; height:150px; margin-top:30px; }
+                .index_arrow img { width:50px;  }
+                .index span { display:block; color:#182842; width:100px; 
+                              position:absolute; bottom:-40px; left:50%; margin-left:-50px; }
+         
+         /* 시승센터 이용가이드 */
+         #guide { width:100%; height:700px; background-color:#182842; }
+             #dirve_guide { width:1300px; height:100%;  
+                             margin:0 auto; padding-top:30px; }
+                 .title02 { color:#e1e1e1; }
+                 #tap_btn { width:450px; margin:00px auto; margin-top:80px; }
+                    .tap_btn { display:inline-block;
+                               width:200px; height:30px; 
+                               text-align:center; line-height:30px; border-right:2px solid #888; }
+                    .tap_btn p { color:#e1e1e1; cursor:pointer; }
+                    .tap_btn01 { padding-right:15px; }
+                    .tap_btn01 p { padding-left:3px; }
+                    .tap_btn p.on { background-color:#d01818; }
+                    .tap_btn02 { border:none; padding-left:15px; }
+                
+                #tap_box { width:100%; height:390px; position:relative; }
+                .tap_box02 { display:none; }
+                .tap_box01 { height:100%; margin-top:120px; }
+                .tap_box02 { height:100%; margin-top:50px; }
+
+                .sub_info02 { color:#e1e1e1; font-size:1em; font-weight:100; }
+                 /* hover 
+                .tap_btn p:hover { background-color:#d01818; }*/
+
+                    /* tap_box01 */
+                    .check { display:inline-block; text-align:center; width:321px; }
+                    /*.check01 { padding-left:5px; }*/
+                    .check img { width:100px; margin-bottom:25px; }
+                    .check p { color:#e1e1e1; font-size:0.9em; }
+                    .check strong { font-size:1.3em; display:block; margin-bottom:-15px; }
+                    .check02 img { padding-bottom:5px; }
+                    .check03 img { padding-bottom:20px; }
+                    /* tap_box02 */
+                    #st { width:1300px; position:absolute; top:170px; left:0; }
+                    #st img { width:100%; }
+                    .drive_box { width:650px; }
+                    .drive_box01 { position:absolute; top:50px; left:0; }
+                    .drive_box01 p { position:absolute; top:0; left:340px; }
+                    .drive_box02 { position:absolute; bottom:25px; left:25%; }
+                    .drive_box02 p { position:absolute; bottom:0; left:340px; }
+                    .drive_box03 { position:absolute; top:50px; right:0; width:550px; }
+                    .drive_box03 p { position:absolute; top:0; left:340px; }
+                    .drive_box img { width:300px; }
+                    .drive_box p { color:#e1e1e1 }
+
+            /* 시승신청 */
+            #form { width:1300px;  margin:0 auto; /*border:1px solid #f00;*/ }
+            #title { margin-top:50px; color:#182842; }
+            #form div { width:700px; height:350px; margin:50px auto 100px auto; background-color:#eee; }
+            #btn { width:100px; height:35px; 
+                   margin:50px auto; cursor:pointer;
+                   text-align:center; line-height:35px;
+                   border-radius:20px;
+                   background-color:#182842; color:#fff; }
+            .sub_info03 { margin:0 auto; width:560px;  }
+
+            table { width:100%; border-spacing:0; background-color:#eee; padding:20px;
+                    margin:80px auto 30px auto; }
+            table th { color:#182842; padding:10px;
+                       text-align:left; width:20%;
+                        }
+            table td { width:80%; }
+            .name { width:150px; height:27px; }
+            .tel { width:100px; height:27px; }
+            #speed-button { width:100px; }
+            
+            
+            /* footer */
+            footer {width:100%; height:60px; background-color:#182842; position:relative; }
+            #foot { position:absolute; top:12px; overflow:hidden; }
+            #foot li { float:left; margin-left:30px; }
+            #foot li:first-child { margin-left:100px; }
+            #foot em { color:#b4b4b4; font-weight:bold; font-size:1.5em; cursor:pointer; }
+
+            #footsns { position:absolute; top:18px; right:0; overflow:hidden; }
+            #footsns li { float:right; height:25px; margin-right:30px; }
+            #footsns li:first-child { margin-right:100px; }
+            #footsns img { height:100%; color:#b4b4b4; cursor:pointer; }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- header -->
+    <div id="header">
+        <div id="logo">
+            <img src="./image/main/logo.png" alt="" title="" />
+        </div>
+        <div id="back_btn">
+            <a href="./index.html"><img src="./image/icon/subbtn01_1.png" alt="" title="" /></a>
+        </div>
+        <img src="./image/sub/sub_main (2).jpg" alt="" title="">
+        <p>
+            <em>TEST DRIVE</em><br />
+            <span>
+                기아자동차 고객만족 시승 서비스
+            </span><br />
+                기아자동차는 시승체험 편의 고객만족을 위해 다양한 시승서비스를<br />
+                제공하고 있습니다. 이제 고객님께서 희망하시는 가까운 센터에서 최고의<br />
+                서비스를 직접 만나실 수 있습니다.
+        </p>
+    </div>
+
+    <!-- 시승절차 안내 -->
+    <div id="drive_info">
+        <p id="step">
+            <em class="title title01">DRIVE STEP</em><br />
+            기아자동차 시승 서비스는 고객님께서 시승예약 시 지정하신 동승 영업담당과 시승 가능여부 확인 후 예약이 확정됩니다.<br />
+            <span class="sub_info sub_info01">
+                * 회원가입 및 로그인 후 신청하실 수 있으며, 예약 취소 시 재 신청은 1주일 후부터 가능합니다.<br />
+                * 비회원 예약은 본인인증을 통하여 신청이 가능합니다.
+            </span>
+        </p>
+        <ul id="index">
+            <li class="index index01">
+                <img src="./image/sub_info icon/11.png" alt="" title="" />
+                <p>시승 예약</p>
+                <span>STEP01</span>
+            </li>
+            <li class="index_arrow">
+                <img src="./image/sub_info icon/12.png" alt="" title="" />
+            </li>
+            <li class="index index02">
+                <img src="./image/sub_info icon/10.png" alt="" title="" />
+                <p>예약 대기</p>
+                <span>STEP02</span>
+            </li>
+            <li class="index_arrow">
+                <img src="./image/sub_info icon/12.png" alt="" title="" />
+            </li>
+            <li class="index index03">
+                <img src="./image/sub_info icon/09.png" alt="" title="" />
+                <p>예약 확정</p>
+                <span>STEP03</span>
+            </li>
+            <li class="index_arrow">
+                <img src="./image/sub_info icon/12.png" alt="" title="" />
+            </li>
+            <li class="index index04">
+                <img src="./image/sub_info icon/08.png" alt="" title="" />
+                <p>시승</p>
+                <span>STEP04</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 시승센터 이용가이드 -->
+    <div id="guide">
+        <div id="dirve_guide">
+            <em class="title title02">USAGE GUIDE</em>
+            <span class="sub_info sub_info02">시승거점 이용 전 아래 사항을 확인하시면 더욱 편안한 시승을 즐길 수 있습니다.</span>
+            <div id="tap_btn">
+                <div class="tap_btn tap_btn01">
+                    <p class="on">
+                        시승 전 유의사항
+                    </p>
+                </div>
+                <div class="tap_btn tap_btn02">
+                    <p>
+                        스마트 시승 체크 포인트
+                    </p>
+                </div>
+            </div>
+            <div id="tap_box">
+
+                <div class="tap_box tap_box01">
+                    <div class="check check01">
+                        <img src="./image/sub_info icon/01.png">
+                        <p>
+                            <strong>상품 정보 사전 확인</strong><br />
+                            보다 만족스러운 구매를 위해<br />
+                            시승하시는 차의 옵션과 정보를 확인해주세요.
+                        </p>
+                    </div>
+                    <div class="check check02">
+                        <img src="./image/sub_info icon/02.png">
+                        <p>
+                            <strong>여유있는 시승체험</strong><br />
+                            시승체험은 차량 분비 및 이동시간을<br />
+                            포함하여 2시간 정도가 소요됩니다.
+                        </p>
+                    </div>
+                    <div class="check check03">
+                        <img src="./image/sub_info icon/03.png">
+                        <p>
+                            <strong>운전면허증 지참</strong><br />
+                            보험 적용 기준에 따라<br />
+                            만21세 이상부터 시승이 가능합니다.
+                        </p>
+                    </div>
+                    <div class="check check04">
+                        <img src="./image/sub_info icon/04.png">
+                        <p>
+                            <strong>안전한 운행</strong><br />
+                            시승 시 고객님의 안전을 위해<br />
+                            교통 법규를 준수해주시기 바랍니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tap_box tap_box02">
+                    <div id="st">
+                        <img src="./image/sub_info icon/도로.png">
+                    </div>
+                    <div class="drive_box drive_box01">
+                        <img src="./image/sub_info icon/05-3.png" alt="" title="" />
+                        <p>
+                            <span>POINT01 탑승 시</span><br />
+                            - 운전석과 그 주변 장치들의 위치<br />
+                            - 미러를 통해 보이는 전후방의 시야<br />
+                            - 주변 수납공간의 위치와 크기
+                        </p>
+                    </div>
+                    <div class="drive_box drive_box02">
+                        <img src="./image/sub_info icon/06-3.png" alt="" title="" />
+                        <p>
+                            <span>POINT02 주행 시</span><br />
+                            - 저속 주행과 고속 주행의 승차감 차이<br />
+                            - 주행 시 바람, 엔진소리, 진동 발생 정도<br />
+                            - 변속 시 걸리는 시간과 충격 강도<br />
+                            - 안전 시스템 작동 여부
+                        </p>
+                    </div>
+                    <div class="drive_box drive_box03">
+                        <img src="./image/sub_info icon/07-3.png" alt="" title="" />
+                        <p>
+                            <span>POINT03 하차 후</span><br />
+                            - 차량 외관의 마감처리<br />
+                            - 뒷자석의 공간 및 폴딩 여부<br />
+                            - 트렁크의 적재공간
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 입력하시오 -->
+    <div id="form">
+        
+        <p id="title">
+            <span class="title title01"><em>시승신청</em></span><br />
+            시승신청을 위한 고객님의 개인정보를 확인해 주세요.
+        </p>
+        <div>
+            <table>
+                <tr>
+                    <th>이름</th>
+                    <td><input type="text" class="name" /></td>
+                </tr>
+                <tr>
+                    <th>휴대폰</th>
+                    <td>
+                        <select name="speed" id="speed">
+                            <option>SKT</option>
+                            <option>KT</option>
+                            <option>LG</option>
+                        </select>&nbsp;&nbsp;
+                        <input type="text" class="tel" /> -
+                        <input type="text" class="tel" /> -
+                        <input type="text" class="tel" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>대리점</th>
+                    <td>
+                        <select name="city" id="city">
+                            <option>서울</option>
+                            <option>경기</option>
+                            <option>강원</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <p class="sub_info sub_info03">
+                * 정확한 개인정보로 입력하지 않으시면 서비스 이용에 불이익이 있을 수 있습니다.<br />
+                * 타인의 휴대폰 번호로 예약하시는 경우, 웹에서 예약내용 조회가 불가능 하오니 이 점 양해 바랍니다.
+            </p>
+            <p id="btn">
+                신청하기
+            </p>
+        </div>
+    </div>
+
+    <!---------------- footer ----------------->
+    <footer>
+
+        <ul id="foot">
+            <li><em>CONTACT</em></li>
+            <li><em>KIA</em></li>
+        </ul>
+
+        <!-- sns -->
+        <ul id="footsns">
+            <li><img src="./image/icon/sns05.png"></li>
+            <li><img src="./image/icon/sns06.png"></li>
+            <li><img src="./image/icon/sns04.png"></li>
+        </ul>
+
+    </footer>
+
+</body>
+</html>

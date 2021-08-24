@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" /> 
+    <title>stinger</title>
+    <!-- script link -->
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="js/pay.js"></script>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700" rel="stylesheet">    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <!---------------- header ----------------->
+    <header>
+            <div id="logo">
+                <img src="./images/main/logo.png" alt="" title="" />
+            </div>
+            <div id="back_btn">
+                <a href="./index.html"><img src="./images/icon/subbtn01_2.png" alt="" title="" /></a>
+            </div>
+    </header>
+    <!---------------- nav ----------------->
+    <nav>
+        <ul>
+            <li class="on"><p><strong>STEP 01</strong><br />상세차종 선택</p></li>
+            <li><p><strong>STEP 02</strong><br />컬러 선택</p></li>
+            <li><p><strong>STEP 03</strong><br />옵션 선택</p></li>
+            <li><p><strong>STEP 04</strong><br />견적완료</p></li>
+        </ul>
+    </nav>
+
+    <!---------------- section ----------------->
+    <section>
+        <div id="result">
+            <div id="car_img">
+                <img src="images/exterior/0.png" />
+            </div>
+
+            <div id="result_txt">
+                <div >
+                    <div id="result_op">
+                        <p>스팅어 가솔린 2.0 터보 프라임</p>
+                        <p>외장: </p>
+                        <p>내장: </p>
+                    </div>
+                    <div id="re_option">
+                        <p>AWD(전자식 사륜구동)</p>
+                        <p>와이드선루프</p>
+                        <p>스타일</p>
+                        <p>컴포트</p>
+                        <p>드라이브 와이즈</p>
+                    </div>
+                </div>
+                <div id="total">
+                    <p>TOTAL</p>
+                    <p><strong><span id="price"></span> 원</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="sel">
+            <div class="step step01 on">
+                <div class="on">
+                    <p>스팅어 가솔린 2.0 터보 프라임</p>
+                    <p>35,050,000원</p>
+                </div>
+                <div>
+                    <p>스팅어 가솔린 2.0 터보 플래티넘</p>
+                    <p>37,700,000원</p>
+                </div>
+                <div>
+                    <p>스팅어 2.2 디젤 프라임 라이트</p>
+                    <p>37,210,000원</p>
+                </div>
+                <div>
+                    <p>스팅어 2.2 디젤 프라임</p>
+                    <p>38,480,000원</p>
+                </div>
+                <div>
+                    <p>스팅어 2.2 디젤 플래티넘</p>
+                    <p>41,130,000원</p>
+                </div>
+                <div>
+                    <p>스팅어 가솔린 3.3 터보</p>
+                    <p>49,380,000원</p>
+                </div>
+            </div>
+            
+            <div id="color">
+                <div class="color color01">
+                    <p>
+                        <strong>외장</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span>하이크로마 레드</span>
+                    </p>
+                    <div class="cc">
+                        <p class="on"><img src="./images/sub_pay/ex01.jpg" /></p>
+                        <p><img src="./images/sub_pay/ex02.jpg" /></p>
+                        <p><img src="./images/sub_pay/ex03.jpg" /></p>
+                        <p><img src="./images/sub_pay/ex04.jpg" /></p>
+                        <p><img src="./images/sub_pay/ex05.jpg" /></p>
+                        <p><img src="./images/sub_pay/ex06.jpg" /></p>
+                    </div>
+                </div>
+                <div class="color color02">
+                    <p>
+                        <strong>내장</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span>다크 레드 팩</span>
+                    </p>
+                    <div class="cc">
+                        <p class="on"><img src="./image/sub_pay/in01.jpg" /></p>
+                        <p><img src="./images/sub_pay/in02.jpg" /></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step step02">
+                <div>
+                   <p>AWD<br />(전자식 사륜구동)</p>
+                    <p>2,450,000원</p>
+                </div>
+                <div>
+                    <p>와이드선루프</p>
+                    <p>790,000원</p>
+                </div>
+                <div>
+                    <p>스타일</p>
+                    <p>980,000원</p>
+                </div>
+                <div>
+                    <p>컴포트</p>
+                    <p>980,000원</p>
+                </div>
+                <div>
+                    <p>드라이브 와이즈</p>
+                    <p>1,470,000원</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="btn">
+            <p><< 처음으로</p>
+            <p><< 이전</p>
+            <p>다음 >></p>
+        </div>
+
+    </section>
+
+    <!---------------- footer ----------------->
+    <footer>
+
+        <ul id="foot">
+            <li><em>CONTACT</em></li>
+            <li><em>KIA</em></li>
+        </ul>
+
+        <!-- sns -->
+        <ul id="footsns">
+            <li><img src="./images/icon/sns05.png"></li>
+            <li><img src="./images/icon/sns06.png"></li>
+            <li><img src="./images/icon/sns04.png"></li>
+        </ul>
+
+    </footer>
+
+
+
+</body>
+</html>

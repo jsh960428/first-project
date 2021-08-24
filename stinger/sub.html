@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>stinger sub</title>
+
+    <!-- script link -->
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.mousewheel.min.js"></script>
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700" rel="stylesheet">
+
+    <script>
+        $(document).ready(function () {
+            var i = 0;
+            $(".right").click(function () {
+                if ( i < 8 ) {
+                    i++;
+                    var move = -240 * i;
+                    $("#slide_wrap").stop().animate({ marginLeft: move }, 500);
+                } else {
+                    false;
+                }
+            });
+            $(".left").click(function () {
+                if (i > 0) {
+                    i--;
+                    var move = -240 * i;
+                    $("#slide_wrap").stop().animate({ marginLeft: move }, 500);
+                } else {
+                    false;
+                }
+            });
+            $(".slide_wrap").click(function () {
+                var s = $(this).index();
+                $(".bg_wrap").removeClass("on");
+                $(".bg_wrap").eq(s).addClass("on");
+            });
+        });
+    </script>
+
+    <style>
+        /* reset css */
+        body { background-color:#182842;  font-family:'Noto Sans KR', sans-serif; }
+        img {border: 0;}
+
+        /* logo */
+        #logo { width:300px; height:30px;
+                position:fixed; top:50px; left:50%; 
+                margin-left:-150px; z-index:10; }
+        #logo img { width:100%; }
+
+        /* back btn */
+        #back_btn { width:70px; height:40px;
+                    position:fixed; top:50px; left:50px; 
+                    z-index:10; }
+        #back_btn img { width:100%; opacity:0.5; }
+
+        /* bg wrap */
+        #bg_gra { width:100%; height:100%; z-index:5;
+                  position:absolute; top:0; left:0; }
+        #bg_gra img { width:100%; height:800px; }
+
+        #bg_wrap { width:100%; height:100%;
+                   position:absolute; top:0; right:0; }
+            .bg_wrap { width:100%; height:100%; }
+            .bg_wrap img { height:800px; position:absolute; top:0; right:0; }
+            .bg_wrap p { position:absolute; top:35%; left:15%; z-index:20; 
+                         color:#fff; font-size:1.2em; 
+                         font-family:'Noto Sans KR', sans-serif; font-weight:300; }
+            .bg_wrap strong { font-size:2em; display:block; }
+            .bg_wrap { display:none; }
+            .on { display:block; }
+
+        /* slide_wrap */
+        #slide { width:100%; height: 19%;
+                 position:fixed; bottom:0; left:0; 
+                 z-index:20; }
+        
+        #slide_btn img { width:50px; height:50px; z-index:21;
+                         position:absolute; top:50%; margin-top:-15px; cursor:pointer; }
+        .left { left:50px; }
+        .right { right:50px; }
+        
+        #slide_mask { width:100%; height:100%;
+                      overflow:hidden; background-color: #000;}
+            #slide_wrap { width:5000px; position: absolute; top: 0;}
+            .slide_wrap img { float:left; width:240px; cursor:pointer; opacity: 0.5;}
+            .slide_wrap img:hover { opacity:1; }
+            
+    </style>
+
+</head>
+<body>
+
+    <!-- logo -->
+    <div id="logo">
+        <img src="./image/main/logo.png" alt="" title="" />
+    </div>
+    <!-- back btn -->
+    <div id="back_btn">
+        <a href="./index.html"><img src="./image/icon/subbtn01.png" alt="" title="" /></a>
+    </div>
+    <!-- bg wrap -->
+    <div id="bg_gra">
+        <img src="./image/sub/sub_gra.png" alt="" title="" />
+    </div>
+    
+    <div id="bg_wrap">
+        <div class="bg_wrap bg_wrap01 on">
+            <p>
+                <strong>신규 스마트키</strong><br />
+                인체공학적 레이아웃 고려하여 버튼 위치를 최적화하고<br />
+                "E"엠블럼이 적용된 고급차 전용 신규 스마트키 적용
+            </p>
+            <img src="./image/sub/01.jpg" alt="" title="">
+        </div>
+
+        <div class="bg_wrap bg_wrap02">
+            <p>
+                <strong>핫 스탬핑 그릴</strong><br />
+                고급스러운 다크 크롬 가니쉬와 핫스탬핑<br />
+                라디에이터 그릴을 활용하여 보다<br />
+                고품격의 프리미엄 이미지를<br />
+                구현하였습니다.
+            </p>
+            <img src="./image/sub/02.jpg" alt="" title="">
+        </div>
+
+        <div class="bg_wrap bg_wrap03">
+            <p>
+                <strong>에어 인테이크/에어커튼</strong><br />
+                헤드라인 하단에 과감하게 직선으로 세워진<br />
+                에어커튼과 라디에이터 그릴 하단의<br />
+                에어 인테이크를 적용하여 퍼포먼스<br />
+                세단의 이미지를 극대화 했습니다.
+            </p>
+            <img src="./image/sub/03.jpg" alt="" title="">
+        </div>
+
+        <div class="bg_wrap bg_wrap04">
+            <p>
+                <strong>9-크리스탈 턴시그널</strong><br />
+                과감하고 날렵한 Full LED 헤드램프와<br />
+                9-Crystal LED 턴시그널을 활용하여 하이테크<br />
+                이미지를 극대화했습니다.
+            </p>
+            <img src="./image/sub/04.jpg" alt="" title="">
+        </div>
+
+        <div class="bg_wrap bg_wrap05">
+            <p>
+                <strong>아일랜드 후드</strong><br />
+                헤드램프, 범퍼와 독립된 간결한 파팅라인<br />
+                적용을 통해 스포티하고 볼륨감 넘치는<br />
+                스타일을 구현하였습니다.
+            </p>
+            <img src="./image/sub/05.jpg" alt="" title="">
+        </div>
+
+        <div class="bg_wrap bg_wrap06">
+            <p>
+                <strong>플래그타입 아웃사이드 미러</strong><br />
+                도어 측면부에 장착된 다크 크롬 아웃사이드<br />
+                미러로 차별화된 외관미를 제공하여<br />
+                고급스러움을 한층 끌어올렸습니다.
+            </p>
+            <img src="./image/sub/06.jpg" alt="" title="">
+        </div>
+
+        <div class="bg_wrap bg_wrap07">
+            <p>
+                <strong>에어로 펜더 가니시</strong><br />
+                과감하고 스포티한 에어로 펜더 가니쉬 적용으로<br />
+                공력개선효과 및 고성능 이미지를 구현했습니다.
+            </p>
+            <img src="./image/sub/07.jpg" alt="" title="">
+        </div>
+
+        <div class="bg_wrap bg_wrap08">
+            <p>
+                <strong>LED 리어 턴시그널 램프</strong><br/>
+                ※디젤 모델은 싱글 트윈 머플러 적용
+            </p>
+            <img src="./image/sub/08.jpg" alt="" title="">
+        </div>
+            </div>
+
+    <!-- slide -->
+    <div id="slide">
+        <div id="slide_mask">
+            <div id="slide_wrap">
+                <div class="slide_wrap slide_wrap01">
+                    <img src="./image/sub/01.jpg" alt="" title="" />
+                </div>
+                <div class="slide_wrap slide_wrap02">
+                    <img src="./image/sub/02.jpg" alt="" title="" />
+                </div>
+                <div class="slide_wrap slide_wrap03">
+                    <img src="./image/sub/03.jpg" alt="" title="" />
+                </div>
+                <div class="slide_wrap slide_wrap04">
+                    <img src="./image/sub/04.jpg" alt="" title="" />
+                </div>
+                <div class="slide_wrap slide_wrap05">
+                    <img src="./image/sub/05.jpg" alt="" title="" />
+                </div>
+                <div class="slide_wrap slide_wrap06">
+                    <img src="./image/sub/06.jpg" alt="" title="" />
+                </div>
+                <div class="slide_wrap slide_wrap07">
+                    <img src="./image/sub/07.jpg" alt="" title="" />
+                </div>
+                <div class="slide_wrap slide_wrap08">
+                    <img src="./image/sub/08.jpg" alt="" title="" />
+                </div>
+            </div>
+        </div>
+
+        
+
+        
+    </div>
+
+</body>
+</html>

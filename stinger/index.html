@@ -1,0 +1,595 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" /> 
+    <title>stinger</title> 
+	<!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700" rel="stylesheet">    
+    <link href="css/stinger.css" rel="stylesheet">    
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- script link -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/stinger.js"></script>
+</head>
+<body>
+    <!---------------- nav ----------------->
+    <nav>
+        <ul>
+            <li>TOP</li>
+            <li>PERFORMANCE</li>
+            <li>EXTERIOR</li>
+            <li>INTERIOR</li>
+            <li>CONVENIENCE</li>
+            <li>SAFETY</li>
+            <li>PURCHASE</li>
+        </ul>
+    </nav>
+
+    <!---------------- header ----------------->
+    <header>
+
+        <!------------------ 비디오 ----------------->
+        <video src="./video/free.mp4" autoplay="autoplay"></video>
+        <img src="./images/main/main.jpg" />
+        <p id="bar"></p>
+
+        <!------------------ 로고 ----------------->
+        <div id="header_logo">
+            <img src="./images/main/black.png" />
+            <img src="./images/main/logo.png" />
+        </div>
+
+        <!------------------ 플레이리스트 ----------------->
+        <div id="header_list">
+            <h4>PLAY LIST</h4>
+            <div class ="track track01">
+                <div>
+                    <img src="./images/main/performance.jpg" />
+                    <p><i class="fas fa-play"></i></p>
+                </div>
+                <h5>PERFORMANCE</h5>
+            </div> 
+
+            <div class="track track02">
+                <div>
+                    <img src="./images/main/style.jpg" />
+                    <p><i class="fas fa-play"></i></p>
+                </div>
+                <h5>STYLE</h5>
+            </div>
+
+            <div class="track track03">
+                <div>
+                    <img src="./images/main/freelaunching.jpg" />
+                    <p><i class="fas fa-play"></i></p>
+                </div>
+                <h5>FREE LAUNCHIG</h5>
+            </div>
+        </div>
+
+    </header>
+
+    <!---------------- performance ----------------->
+    <div id="perform">
+        
+        <h2>PERFORMANCE</h2>
+
+        <!------------------ 탭버튼 ----------------->
+        <ul id="perform_btn">
+            <li class="on"><p>BASIC</p></li>
+            <li><p>TURBO</p></li>
+            <li><p>CONTROLS</p></li>
+        </ul>
+
+        <!------------------ 탭메뉴 컨텐츠 ----------------->
+        <div id="perform_wrap">
+
+            <!------------------ BASIC ----------------->
+            <ul class="per per01 on">
+                <li>
+                    <img src="./images/icon/perfob01.png" />
+                    <p>
+                        FROM 차량기본가격<br />
+                        <strong>35,050,000원</strong>
+                    </p>
+                </li>
+
+                <li>
+                    <img src="./images/icon/perfob02.png" />
+                    <p>
+                        UP TO 복합연비<br />
+                        <strong>14.8 km/l</strong>
+                    </p>
+                </li>
+
+                <li>
+                    <img src="./images/icon/perfob03.png" />
+                    <p>
+                        UP TO 배기량<br />
+                        <strong>3,342 cc</strong>
+                    </p>
+                </li>
+
+                <li>
+                    <img src="./images/icon/perfob04.png" />
+                    <p>
+                        UP TO 최고출력<br />
+                        <strong>370ps/6,000rpm</strong>
+                    </p>
+                </li>
+
+                <li>
+                    <img src="./images/icon/perfob05.png" />
+                    <p>
+                        무상 보증 기간<br />
+                        <strong>3년/60,000km</strong>
+                    </p>
+                </li>
+            </ul>
+
+            <!------------------ TURBO ----------------->
+            <ul class="per per02">
+                <li>
+                    <img src="./images/icon/perfot01.png" />
+                    <p>
+                        가솔린 2.0 터보 GDI<br />
+                        <strong>370 ps / 52 kgf&bull;m</strong>
+                    </p>
+                </li>
+
+                <li>
+                    <img src="./images/icon/perfot02.png" />
+                    <p>
+                        가솔린 v6 3.3 트윈터보 GDI<br />
+                        <strong>255 ps / 36 kgf&bull;m</strong>
+                    </p>
+                </li>
+
+                <li>
+                    <img src="./images/icon/perfot03.png" />
+                    <p>
+                        디젤 2.2<br />
+                        <strong>202 ps / 45 kgf&bull;m</strong>
+                    </p>
+                </li>
+            </ul>
+
+            <!------------------ CONTROLS ----------------->
+            <ul class ="per per03">
+                <li>
+                    <img src="./images/icon/perfoc01.png" />
+                    <p>
+                        <strong>전자제어 서스펜션</strong><br />
+                        차량의 주행 조건 및 노면에 따라 실시간으로 서스펜션의 감쇠력을 제어하여 승차감과 안정성을 높여 줍니다<br />
+                    </p>
+                </li>
+
+                <li>
+                    <img src="./images/icon/perfoc02.png" />
+                    <p>
+                        <strong>전자제어 사륜구동 시스템</strong><br />
+                        도로 접지력이 우수해 코너링 시에도
+                        안정적으로 주행할 수 있으며, 주행 모드에 따른 차별적 바퀴 구동력 배분으로 드리프트가 가능합니다<br />
+                    </p>
+                </li>
+
+                <li>
+                    <img src="./images/icon/perfoc03.png" />
+                    <p>
+                        <strong>브림보 브레이크</strong><br />
+                        화려한 레드 컬러의 고강성 브렘보 캘리퍼를 적용하여 강력한 제동 성능을 구현하였습니다<br />
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!---------------- exterior ----------------->
+    <div id="ex">
+        
+        <!------------------ 슬라이드 이미지 ----------------->
+        
+        <div id="ex_img">
+            <div class="ex ex01"></div>
+            <div class="ex ex02"></div>
+            <div class="ex ex03"></div>
+
+            <div class="ex ex04">
+                <div id="ex_color">
+                    <p class="on"></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <span>하이크로마 레드</span>
+                </div>
+                <div id="ex_rot">
+                    <img src="./images/exterior/0.png" />
+                    <p id="rot_img"></p>
+                    <img id="rot_btn" src="./images/icon/exbtn03.png" />
+                </div>
+                
+            </div>
+        </div>
+
+        <!------------------ 타이틀 ----------------->
+        <div id="ex_title">
+            <h2>EXTERIOR</h2>
+            <p>
+                <strong>프리미엄 다이나믹 스타일</strong><br />
+                <span>날렵한 인상과 와이드한 스탠드</span>
+            </p>
+            <p class="more"><a href="./sub.html">+ MORE</a></p>
+        </div>
+
+        <!------------------ 슬라이드 버튼 ----------------->
+        <div id="ex_btn">
+            <p class="on"></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+
+    </div>
+
+    <!---------------- interior ----------------->
+    <div id="in">
+
+        <div id="inimg">
+            <img src="./images/interior/01.jpg">
+        </div>
+
+        <div id="intext">
+            <h2><em>INTERIOR</em></h2>
+            <p>
+                <span>항공기 모티브의 프리미엄 인테리어</span> <br />
+                항공기의 한쪽 날개를 형상화한 크래시 패드, 항공기 엔진을 닮은 스포크 타입의 원형 에어벤트 등<br />
+                풍부한 아날로그 감성을 기반으로 완성된 비행기 조종석 모티브의 프리미엄 인테리어
+            </p>
+        </div>
+
+        <div id="inbtn">
+            <ul>
+                <li><img src="./images/icon/plusbtn.png"></li>
+                <li><img src="./images/icon/plusbtn.png"></li>
+                <li><img src="./images/icon/plusbtn.png"></li>
+                <li><img src="./images/icon/plusbtn.png"></li>
+                <li><img src="./images/icon/plusbtn.png"></li>
+                <li><img src="./images/icon/plusbtn.png"></li>
+            </ul>
+        </div>
+
+        <!-- 내부 서브 -->
+        <div id="popup">
+
+            <!-- 내용 -->
+            <!-- 1 -->
+            <div class="insub insub01">
+                <!-- img -->
+                <p><span><img src="./images/interior/05.jpg"></span></p>
+                <!-- btn -->
+                <p id="inbtnpopup">
+                    <img src="./images/icon/subbtn03.png">
+                </p>
+                <!-- 서브이미지 -->
+                <p>
+                    <img src="./images/interior/in02.png">
+                </p>
+                <!-- text -->
+                <p></p>
+                <p>
+                    <strong>스포티 클러스터</strong><br />
+                    차랸 상태 및 다양한 주행 정보를 7인치 컬러 TFT LCD 패널로<br />
+                    전달함으로써 운전을 안전하고 편리하게 도와드립니다.<br />
+                    특히 게이지의 숫자를 기울임으로 표현하는 등 스포티에<br />
+                    특화된 디자인을 적용함으로써 차량의 고유한 특징을 살렸습니다.
+                </p>
+            </div>
+
+            <!-- 2 -->
+            <div class="insub insub02">
+                <!-- img -->
+                <p><img src="./images/interior/05.jpg"></p>
+                <!-- btn -->
+                <p id="inbtnpopup">
+                    <img src="./images/icon/subbtn03.png">
+                </p>
+                <!-- 서브이미지 -->
+                <p>
+                    <img src="./images/interior/in01.png">
+                </p>
+                <!-- text -->
+                <p></p>
+                <p>
+                    <strong>D컷 스티어링휠</strong><br />
+                    운전자가 직접 운전자와의 거리 및 각도를 조절할 수 있고,<br />
+                    손쉬운 조작을 위하여 유압장치나 전동 모터가 장착되었고<br />
+                    이곳에 에어백, 오디오컨트롤러가 내장되어 안전하고 편리하게 도와드립니다.
+                </p>
+            </div>
+
+            <!-- 3 -->
+            <div class="insub insub03">
+                <!-- img -->
+                <p><img src="./images/interior/05.jpg"></p>
+                <!-- btn -->
+                <p id="inbtnpopup">
+                    <img src="./images/icon/subbtn03.png">
+                </p>
+                <!-- 서브이미지 -->
+                <p>
+                    <img src="./images/interior/in03.png">
+                </p>
+                <!-- text -->
+                <p></p>
+                <p>
+                    <strong>심리스 플로팅타입 8인치 네비게이션</strong><br />
+                    내비게이션 기능의 윈드쉴드 글라스에 입체감 있는 그래픽과 다양한<br />
+                    주행정보를 투영시켜 보여줌으로써 운전자의 시선 이동을 최소화하고<br />
+                    운전 자세를 추천하는 시스템으로 안전한 운전을 도와 드립니다.
+                </p>
+            </div>
+
+            <!-- 4 -->
+            <div class="insub insub04">
+                <!-- img -->
+                <p><img src="./images/interior/05.jpg"></p>
+                <!-- btn -->
+                <p id="inbtnpopup">
+                    <img src="./images/icon/subbtn03.png">
+                </p>
+                <!-- 서브이미지 -->
+                <p>
+                    <img src="./images/interior/in04.png">
+                </p>
+                <!-- text -->
+                <p></p>
+                <p>
+                    <strong>트리플 서클 타입 에어벤트 그릴</strong><br />
+                    클래식한 감성의 써클타입 형상에 반광크롬 재질 적용으로 고급감 밎<br />
+                    감성품질을 향상 하였습니다.
+                </p>
+            </div>
+
+            <!-- 5 -->
+            <div class="insub insub05">
+                <!-- img -->
+                <p><img src="./images/interior/05.jpg"></p>
+                <!-- btn -->
+                <p id="inbtnpopup">
+                    <img src="./images/icon/subbtn03.png">
+                </p>
+                <!-- 서브이미지 -->
+                <p>
+                    <img src="./images/interior/in06.png">
+                </p>
+                <!-- text -->
+                <p></p>
+                <p>
+                    <strong>6칼라 인테리어 무드조명</strong><br />
+                    개인의 취향에 따라 흰색, 주황색, 빨간색, 파란색, 보라색, 녹색으로 설정가능<br />
+                    하며, 드라이브 모드 변동 기능을 선택하면 무드 조명이 주행 특성에 따라<br />
+                    자동으로 변경되며 조명의 밝기를 1단계부터 4단계까지 선택할 수 있습니다.
+                </p>
+            </div>
+
+            <!-- 6 -->
+            <div class="insub insub06">
+                <!-- img -->
+                <p><img src="./images/interior/05.jpg"></p>
+                <!-- btn -->
+                <p id="inbtnpopup">
+                    <img src="./images/icon/subbtn03.png">
+                </p>
+                <!-- 서브이미지 -->
+                <p>
+                    <img src="./images/interior/in05.png">
+                </p>
+                <!-- text -->
+                <p></p>
+                <p>
+                    <strong>나파가죽시트/버킷리타일시트</strong><br />
+                    착촤 위치를 하향시키고, 시트백 볼스터와 허리지지대를 전동식으로<br />
+                    조절 가능하게 하여 퍼포먼스 주행에 최적화된 시트를 적용하였습니다.
+                </p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!---------------- convenience ----------------->
+    <div id="con">
+
+        <div id="conwrap">
+            <div id="context">
+                <h2><em>CONVENLENCE</em></h2>
+                <p>
+                    <strong>최신 프리미엄 편의 사양으로 더욱 쾌적한 드라이빙 환경</strong><br />
+                    전자식 변속레버(SBW)와 전자식 파킹 브레이크(EPB) 기본화
+                </p>
+            </div>
+
+            <div class="conbox conbox01">
+                <p><img src="./images/convenience/01.jpg"></p>
+                <p>
+                    <strong>5가지의 주행모드 통합제어 시스템</strong> <br />
+                    운전자의 성향에 따라 선택 주행할 수 있으며, 모드별<br />
+                    서스펜션, 스티어링 휠, 변속 패턴을 달리 제어하여<br />
+                    최적의 주행감을 제공합니다.
+                </p>
+            </div>
+            <div class="conbox conbox02">
+                <p><img src="./images/convenience/02.jpg"></p>
+                <p>
+                    <strong>스마트 운전자세 시스템</strong><br />
+                    화면에 자신의 키, 몸무게, 앉은키 정보를 입력하면 해당 신체<br />
+                    조건에 최적화 된 운전석 시트 스타이어링 휠, 아웃사이드<br />
+                    미러 및 헤드업 디스플레이 위치를 추천해 드립니다.
+                </p>
+            </div>
+            <div class="conbox conbox03">
+                <p><img src="./images/convenience/03.jpg"></p>
+                <p>
+                    <strong>헤드업 디스플레이(HUD)</strong><br />
+                    윈드쉴드 글라스에 입체감 있는 그래픽과 다양한 주행정보를<br />
+                    투영시켜 보여줌으로써 운전자의 시선 이동을 최소화하여<br />
+                    안전한 운전을 도와 드립니다.
+                </p>
+            </div>
+            <div class="conbox conbox04">
+                <p><img src="./images/convenience/04.jpg"></p>
+                <p>
+                    <strong>렉시콘 프리미엄 사운드</strong><br />
+                    최고의 럭셔리 오디오 브랜드 렉시콘의 프리미엄 사운드를<br />
+                    15개의 아름다운 스피커로 들을 수 있습니다.
+                </p>
+            </div>
+            <div class="conbox conbox05">
+                <p><img src="./images/convenience/05.jpg"></p>
+                <p>
+                    <strong>전좌석 스마트 히티드 앞좌석 통풍 시트</strong><br />
+                    스마트 히티드 시트와 통풍시트로 동승자 까지<br />
+                    편안한 여행을 할 수 있도록 해줍니다.
+                </p>
+            </div>
+            <div class="conbox conbox06">
+                <p><img src="./images/convenience/06.jpg"></p>
+                <p>
+                    <strong>운전석 전동 익스텐션 시트</strong><br />
+                    운전자의 체형에 맞게 쿠션 길이를 조절할 수 있어<br />
+                    안락한 착좌감 제공합니다.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!---------------- safety ----------------->
+    <div id="safe">
+
+        <div id="safewrap">
+            <div id="safetext">
+                <h2><em>SAFETY</em></h2>
+                <p>
+                    최신 프리미엄 편의 사양으로 더욱 쾌적한 드라이빙 환경
+                </p>
+            </div>
+
+            <div id="safebtn">
+                <img src="./images/icon/btn_left.png">
+                <img src="./images/icon/btn_right.png">
+            </div>
+
+            <div id="safeboxmask">
+                <div id="safeboxwrap">
+                    <div>
+                        <img src="./images/safety/01.jpg">
+                        <p>
+                            <span>
+                                <strong>스마트 크루즈 컨트롤(SCC)</strong><br />
+                                정차 & 재출발, 고속도로 안전구간 자동감속
+                            </span>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./images/safety/02.jpg">
+                        <p>
+                            <span>
+                                <strong>전방 충돌방지 보조(FCA)</strong><br />
+                                전방 레이더와 전발 카메라에서 감지하는 신호를 종합적으로 판단하여 선행차량 및 보행자와의 충돌 위험 상황이<br />
+                                감지될 경우, 운전자에게 경고를 하고 필요시 브레이크 작동으로 운전자와 차량의 피해를 경감시켜 줍니다.
+                            </span>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./images/safety/03.jpg">
+                        <p>
+                            <span>
+                                <strong>하이빔 보조(HBA)</strong><br />
+                                주변의 조명 상황과 다른 차량의 광원을 자동으로 인식해<br />
+                                하이빔의 작동을 자동으로 ON/OFF 함으로써 야간 주행의 편의성을 높였습니다.
+                            </span>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./images/safety/04.jpg">
+                        <p>
+                            <span>
+                                <strong>차로 이탈방지 보조(LKA)</strong><br />
+                                방향 지시등 조작없이 차량이 차로를 이탈하려 할 경우, 클러스터에 경고하고,<br />
+                                차로 이탈을 방지하도록 스티어링 휠을 보조 합니다.
+                            </span>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./images/safety/05.jpg">
+                        <p>
+                            <span>
+                                <strong>후측방 충돌 경고(BCW)</strong><br />
+                                후측방 사각 지대 또는 고속으로 접근하는 차량을 인식,<br />
+                                운전자에게 경고해주는 예방 안전 시스템입니다.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="safesubbox">
+                <p><img class="on" src="./images/safety/01.jpg"></p>
+                <p><img src="./images/safety/02.jpg"></p>
+                <p><img src="./images/safety/03.jpg"></p>
+                <p><img src="./images/safety/04.jpg"></p>
+                <p><img src="./images/safety/05.jpg"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <!---------------- purchase ----------------->
+    <div id="pur">
+
+        <h2><em>PURCHASE</em></h2>
+        <p>
+            FROM 차량 기본 가격<br />
+            <strong>35,050,000원</strong>
+        </p>
+        <p>
+            <a href="./info_pop.html"><img src="./images/icon/pur01.png"></a><br />
+        </p>
+        <p>
+            <a href="./pay.html"><img src="./images/icon/pur02.png"><br /></a>
+        </p>
+        <p><img src="./images/purchse/PNG.png"></p>
+        <p>시승 신청</p>
+        <p>견적 보기</p>
+
+    </div>
+
+    <!---------------- footer ----------------->
+    <footer>
+
+        <ul id="foot">
+            <li><em>CONTACT</em></li>
+            <li><em>KIA</em></li>
+        </ul>
+
+        <!-- sns -->
+        <ul id="footsns">
+            <li><img src="./images/icon/sns05.png"></li>
+            <li><img src="./images/icon/sns06.png"></li>
+            <li><img src="./images/icon/sns04.png"></li>
+        </ul>
+
+    </footer>
+
+
+
+</body>
+</html>
