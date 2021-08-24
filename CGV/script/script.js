@@ -7,10 +7,16 @@ $(function(){
             if (scrollTopNum <= 150) {
                 scrollTopNum == 150;
             }
+            if ($(this).scrollTop() >= 1250) {
+                scrollTop() == 1250;
+            }
+
             $("#quick").stop().animate({
                 top: scrollTopNum
             }, 700);
         });
+
+
     });
 
     
